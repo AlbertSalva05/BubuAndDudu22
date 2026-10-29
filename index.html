@@ -1,1267 +1,608 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js" data-theme="default" data-text-size="default" data-motion="full">
+<html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>1 Year, 9 Months of Us — Bubu &amp; Dudu</title>
-<meta name="description" content="A beautifully chaotic love story. Made by Bubu, for Dudu — 1 year and 9 months of fights, kisses, laughs and cuddles.">
-<meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#0b1020">
-<meta name="author" content="Bubu">
-<meta name="version" content="1.2.0">
-<meta property="og:title" content="1 Year, 9 Months of Us">
-<meta property="og:description" content="A Beautifully Chaotic Love Story — for Dudu.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Month 22 · Bubu Lotto for Lala</title>
+<meta name="description" content="Monthsary No. 22: six scratch-off love tickets, a date draw, Bubu Hotline, sticker book and wishing well. Para kay Lala, from Bubu.">
+<meta name="theme-color" content="#151a2b">
+<meta property="og:title" content="Month 22 · Bubu Lotto for Lala">
+<meta property="og:description" content="Every ticket wins. Kuskusin mo, Lala.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='11' cy='16' r='9' fill='%236fa8e8'/%3E%3Ccircle cx='21' cy='16' r='9' fill='%23e8707a' fill-opacity='.9'/%3E%3C/svg%3E">
+<meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- Fonts: all SIL Open Font License 1.1 (free for web/commercial use) -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;600&display=swap">
 <style>
-/* =========================================================
-   DESIGN TOKENS — v1.0.0
-   Layer 1: primitives · Layer 2: semantic · Layer 3: component
-   ========================================================= */
-:root{
-  /* --- primitives: colour --- */
-  --blue-200: oklch(0.88 0.06 250);
-  --blue-300: oklch(0.82 0.09 250);
-  --blue-500: oklch(0.73 0.12 250);
-  --blue-800: oklch(0.36 0.09 255);
-  --red-200: oklch(0.89 0.05 18);
-  --red-300: oklch(0.82 0.09 18);
-  --red-500: oklch(0.72 0.14 18);
-  --red-800: oklch(0.38 0.11 20);
-  --navy-950: oklch(0.15 0.028 265);
-  --navy-900: oklch(0.185 0.032 265);
-  --navy-850: oklch(0.215 0.034 265);
-  --navy-800: oklch(0.25 0.036 265);
-  --navy-700: oklch(0.33 0.036 265);
-  --ink-50: oklch(0.97 0.008 80);
-  --ink-200: oklch(0.87 0.014 262);
-  --ink-300: oklch(0.79 0.018 262);
-  --gold-400: oklch(0.84 0.1 85);
-
-  /* --- semantic: brand (required names) --- */
-  --color-bubu-blue: var(--blue-500);
-  --color-dudu-red: var(--red-500);
-  --color-midnight: var(--navy-950);
-  --color-white: var(--ink-50);
-  --color-soft-blue: var(--blue-300);
-  --color-soft-red: var(--red-300);
-
-  /* --- semantic: UI --- */
-  --color-bg: var(--navy-950);
-  --color-bg-alt: var(--navy-900);
-  --color-surface: var(--navy-850);
-  --color-surface-raised: var(--navy-800);
-  --color-border: oklch(0.42 0.03 265 / 0.55);
-  --color-border-strong: var(--navy-700);
-  --color-text: var(--ink-50);
-  --color-text-muted: var(--ink-300);
-  --color-text-soft: var(--ink-200);
-  --color-on-accent: var(--navy-950);
-  --color-focus: var(--gold-400);
-  --color-success: oklch(0.82 0.11 155);
-  --color-error: var(--red-300);
-  --glass-bg: oklch(0.25 0.036 265 / 0.6);
-  --glass-border: oklch(0.9 0.02 262 / 0.12);
-  --glass-blur: 12px;
-
-  /* --- spacing: 8pt grid (4px half-step only for hairline gaps) --- */
-  --space-half: 0.25rem;  /* 4  */
-  --space-1: 0.5rem;      /* 8  */
-  --space-2: 1rem;        /* 16 */
-  --space-3: 1.5rem;      /* 24 */
-  --space-4: 2rem;        /* 32 */
-  --space-5: 2.5rem;      /* 40 */
-  --space-6: 3rem;        /* 48 */
-  --space-8: 4rem;        /* 64 */
-  --space-12: 6rem;       /* 96 */
-  --space-16: 8rem;       /* 128 */
-
-  /* --- typography --- */
-  --font-display: "Instrument Serif", "Iowan Old Style", Georgia, serif;
-  --font-body: "Bricolage Grotesque", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
-  --text-xs: 0.8125rem;   /* 13 — meta only */
-  --text-sm: 0.875rem;    /* 14 */
-  --text-base: 1rem;      /* 16 */
-  --text-md: 1.125rem;    /* 18 */
-  --text-lg: 1.25rem;     /* 20 */
-  --text-xl: 1.5rem;      /* 24 */
-  --text-2xl: 2rem;       /* 32 */
-  --text-3xl: clamp(2.5rem, 7vw, 3.5rem);   /* 40–56 */
-  --text-4xl: clamp(3rem, 12vw, 6rem);      /* 48–96 */
-  --leading-tight: 1.05;
-  --leading-snug: 1.25;
-  --leading-body: 1.5;    /* 16 × 1.5 = 24 → on the 8pt baseline */
-  --tracking-display: -0.015em;
-  --tracking-body: 0;
-  --tracking-eyebrow: 0.16em;
-
-  /* --- shape & elevation --- */
-  --radius-sm: 8px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
-  --radius-pill: 999px;
-  --elevation-1: 0 1px 2px oklch(0 0 0 / 0.3), 0 2px 8px oklch(0 0 0 / 0.2);
-  --elevation-2: 0 4px 16px oklch(0 0 0 / 0.3), 0 1px 3px oklch(0 0 0 / 0.3);
-  --elevation-3: 0 16px 48px oklch(0 0 0 / 0.45), 0 4px 12px oklch(0 0 0 / 0.3);
-  --glow-blue: 0 0 32px oklch(0.73 0.12 250 / 0.35);
-  --glow-red: 0 0 32px oklch(0.72 0.14 18 / 0.35);
-
-  /* --- motion --- */
-  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
-  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
-  --dur-fast: 160ms;
-  --dur-base: 280ms;
-  --dur-slow: 640ms;
-
-  /* --- layout --- */
-  --container: 72rem;
-  --container-narrow: 42rem;
-  --tap-min: 44px;
-  --header-h: 64px;
-}
-
-/* Visitor-controlled text sizes (everything is rem-based) */
-html[data-text-size="default"]{font-size:100%}
-html[data-text-size="large"]{font-size:112.5%}
-html[data-text-size="larger"]{font-size:125%}
-
-/* High-contrast theme */
-html[data-theme="contrast"]{
-  --color-bg:#000; --color-bg-alt:#000; --color-surface:#000; --color-surface-raised:#0a0a0a;
-  --color-border:#fff; --color-border-strong:#fff;
-  --color-text:#fff; --color-text-muted:#fff; --color-text-soft:#fff;
-  --color-bubu-blue: oklch(0.86 0.1 250); --color-dudu-red: oklch(0.85 0.1 18);
-  --color-soft-blue: oklch(0.9 0.07 250); --color-soft-red: oklch(0.9 0.06 18);
-  --color-on-accent:#000; --color-focus:#ffe14d;
-  --glass-bg:#000; --glass-border:#fff; --glass-blur:0px;
-  --glow-blue:none; --glow-red:none;
-}
-html[data-theme="contrast"] .ambient-glow{display:none}
-
-/* Reduced motion — system or visitor choice */
-@media (prefers-reduced-motion: reduce){ html:not([data-motion="full-forced"]){ --dur-fast:1ms; --dur-base:1ms; --dur-slow:1ms; } }
-html[data-motion="reduced"]{ --dur-fast:1ms; --dur-base:1ms; --dur-slow:1ms; }
-html[data-motion="reduced"] *, html[data-motion="reduced"] *::before, html[data-motion="reduced"] *::after{animation-duration:1ms!important;animation-iteration-count:1!important;transition-duration:1ms!important;scroll-behavior:auto!important}
-
-/* =========================================================
-   BASE
-   ========================================================= */
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + var(--space-2));-webkit-text-size-adjust:100%;text-size-adjust:100%}
-body{margin:0;background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);font-size:var(--text-base);line-height:var(--leading-body);letter-spacing:var(--tracking-body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-body.intro-open{overflow:hidden}
-img{max-width:100%;display:block}
-h1,h2,h3,h4,p,ul,ol,figure,blockquote,dl,dd{margin:0}
-ul,ol{padding:0;list-style:none}
-button{font:inherit;color:inherit;cursor:pointer}
-a{color:var(--color-soft-blue);text-underline-offset:0.2em}
-a:hover{color:var(--color-soft-red)}
-[hidden]{display:none!important}
-:focus-visible{outline:3px solid var(--color-focus);outline-offset:3px;border-radius:var(--radius-sm)}
-::selection{background:var(--color-dudu-red);color:var(--color-on-accent)}
-p,li,dd,blockquote{text-wrap:pretty}
-h1,h2,h3{text-wrap:balance}
-.visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
-.skip-link{position:fixed;left:var(--space-2);top:-100px;z-index:200;background:var(--color-focus);color:#000;padding:var(--space-1) var(--space-2);border-radius:var(--radius-sm);font-weight:600;min-height:var(--tap-min);display:flex;align-items:center}
-.skip-link:focus{top:var(--space-2)}
-
-.page-container{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:var(--space-3)}
-.page-container-narrow{max-width:var(--container-narrow)}
-@media (min-width:768px){.page-container{padding-inline:var(--space-4)}}
-
-/* Ambient background — two soft light sources, no heavy gradient */
-.ambient-glow{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
-.ambient-glow-bubu,.ambient-glow-dudu{position:absolute;width:60vmax;height:60vmax;border-radius:50%;filter:blur(80px);opacity:.14}
-.ambient-glow-bubu{background:var(--color-bubu-blue);left:-25vmax;top:10vh}
-.ambient-glow-dudu{background:var(--color-dudu-red);right:-25vmax;top:55vh}
-main,.site-header,.site-footer{position:relative;z-index:1}
-
-/* Scroll reveal */
-.js .reveal{opacity:0;transform:translateY(16px);transition:opacity var(--dur-slow) var(--ease-out),transform var(--dur-slow) var(--ease-out)}
-.js .reveal.reveal-visible{opacity:1;transform:none}
-
-/* =========================================================
-   COMPONENT: button
-   ========================================================= */
-.button{display:inline-flex;align-items:center;justify-content:center;gap:var(--space-1);min-height:var(--tap-min);padding:var(--space-1) var(--space-3);border-radius:var(--radius-pill);border:1.5px solid transparent;font-size:var(--text-base);font-weight:600;line-height:1.25;text-decoration:none;transition:transform var(--dur-fast) var(--ease-out),background-color var(--dur-base),box-shadow var(--dur-base),border-color var(--dur-base);-webkit-tap-highlight-color:transparent}
-.button:active{transform:scale(.97)}
-.button-primary{background:var(--color-white);color:var(--color-on-accent)}
-.button-primary:hover{background:var(--color-soft-blue)}
-.button-blue{background:var(--color-bubu-blue);color:var(--color-on-accent)}
-.button-blue:hover{box-shadow:var(--glow-blue)}
-.button-red{background:var(--color-dudu-red);color:var(--color-on-accent)}
-.button-red:hover{box-shadow:var(--glow-red)}
-.button-ghost{background:transparent;color:var(--color-text);border-color:var(--color-border)}
-.button-ghost:hover{border-color:var(--color-text-muted);background:oklch(1 0 0 / .04)}
-.button-large{min-height:56px;padding:var(--space-2) var(--space-4);font-size:var(--text-md)}
-.button-small{min-height:var(--tap-min);padding:var(--space-1) var(--space-2);font-size:var(--text-sm)}
-.button-icon{width:var(--tap-min);padding:0}
-.button[disabled],.button[aria-disabled="true"]{opacity:.5;cursor:not-allowed}
-.button-arrow{transition:transform var(--dur-base) var(--ease-out)}
-.button:hover .button-arrow{transform:translateX(4px)}
-
-/* COMPONENT: tag */
-.tag{display:inline-flex;align-items:center;gap:var(--space-half);padding:var(--space-half) var(--space-1);border-radius:var(--radius-pill);font-size:var(--text-xs);font-weight:600;line-height:1.5;letter-spacing:.04em;white-space:nowrap;border:1px solid var(--color-border);color:var(--color-text-soft)}
-.tag-blue{border-color:var(--color-bubu-blue);color:var(--color-soft-blue)}
-.tag-red{border-color:var(--color-dudu-red);color:var(--color-soft-red)}
-
-/* COMPONENT: glass-card */
-.glass-card{background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:var(--radius-lg);box-shadow:var(--elevation-2);-webkit-backdrop-filter:blur(var(--glass-blur));backdrop-filter:blur(var(--glass-blur))}
-
-/* COMPONENT: section-heading */
-.page-section{padding-block:var(--space-12)}
-@media (min-width:1024px){.page-section{padding-block:var(--space-16)}}
-.section-heading{display:flex;flex-direction:column;gap:var(--space-2);margin-bottom:var(--space-6);max-width:44rem}
-.section-heading-center{margin-inline:auto;text-align:center;align-items:center}
-.section-heading-eyebrow{display:inline-flex;align-items:center;gap:var(--space-1);font-size:var(--text-sm);font-weight:600;letter-spacing:var(--tracking-eyebrow);text-transform:uppercase;color:var(--color-text-muted)}
-.section-heading-eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--color-bubu-blue);box-shadow:10px 0 0 var(--color-dudu-red);margin-right:10px}
-.section-heading-title{font-family:var(--font-display);font-weight:400;font-size:var(--text-3xl);line-height:var(--leading-tight);letter-spacing:var(--tracking-display)}
-.section-heading-title em{font-style:italic;color:var(--color-soft-red)}
-.section-heading-lede{font-size:var(--text-md);color:var(--color-text-muted);max-width:36rem}
-
-/* =========================================================
-   COMPONENT: intro-screen
-   ========================================================= */
-.intro-screen{position:fixed;inset:0;z-index:150;background:var(--color-midnight);display:grid;place-items:center;padding:var(--space-4) var(--space-3);transition:opacity var(--dur-slow) var(--ease-out),transform var(--dur-slow) var(--ease-out),visibility 0s linear var(--dur-slow)}
-.intro-screen-leaving{opacity:0;transform:scale(1.04);visibility:hidden}
-.intro-screen-inner{max-width:34rem;display:flex;flex-direction:column;gap:var(--space-4)}
-.intro-screen-line{opacity:0;transform:translateY(12px);animation:intro-line var(--dur-slow) var(--ease-out) forwards}
-.intro-screen-greeting{font-family:var(--font-display);font-size:var(--text-4xl);line-height:var(--leading-tight);letter-spacing:var(--tracking-display)}
-.intro-screen-greeting em{color:var(--color-soft-red)}
-.intro-screen-copy{font-size:var(--text-lg);color:var(--color-text-soft);line-height:var(--leading-snug)}
-.intro-screen-count{font-family:var(--font-display);font-size:var(--text-2xl);line-height:var(--leading-snug)}
-.intro-screen-count span{display:block}
-.intro-screen-count span:nth-child(1){color:var(--color-soft-blue)}
-.intro-screen-count span:nth-child(2){color:var(--color-soft-red)}
-.intro-screen-count em{font-style:italic}
-.intro-screen-line:nth-child(1){animation-delay:.2s}
-.intro-screen-line:nth-child(2){animation-delay:1.1s}
-.intro-screen-line:nth-child(3){animation-delay:2s}
-.intro-screen-line:nth-child(4){animation-delay:2.9s}
-.intro-screen-skip{position:absolute;right:var(--space-2);bottom:var(--space-2)}
-@keyframes intro-line{to{opacity:1;transform:none}}
-.no-js .intro-screen{display:none}
-
-/* =========================================================
-   COMPONENT: site-header + nav-menu + settings-panel
-   ========================================================= */
-.site-header{position:sticky;top:0;z-index:50;height:var(--header-h);background:oklch(0.15 0.028 265 / .82);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--glass-border)}
-html[data-theme="contrast"] .site-header{background:#000}
-.site-header-inner{height:100%;display:flex;align-items:center;justify-content:space-between;gap:var(--space-2)}
-.brand-logo{display:inline-flex;align-items:center;gap:var(--space-1);min-height:var(--tap-min);color:var(--color-text);text-decoration:none;font-weight:600}
-.brand-logo:hover{color:var(--color-text)}
-.brand-logo-mark{position:relative;width:32px;height:20px;flex:none}
-.brand-logo-mark::before,.brand-logo-mark::after{content:"";position:absolute;top:0;width:20px;height:20px;border-radius:50%}
-.brand-logo-mark::before{left:0;background:var(--color-bubu-blue)}
-.brand-logo-mark::after{right:0;background:var(--color-dudu-red);mix-blend-mode:screen}
-.brand-logo-text{font-size:var(--text-base);white-space:nowrap}
-.brand-logo-text span{color:var(--color-text-muted);font-weight:400}
-.site-header-actions{display:flex;align-items:center;gap:var(--space-1)}
-.nav-menu{display:none}
-.nav-list{display:flex;gap:var(--space-half)}
-.nav-list-item a{display:flex;align-items:center;min-height:var(--tap-min);padding-inline:var(--space-2);border-radius:var(--radius-pill);color:var(--color-text-muted);text-decoration:none;font-size:var(--text-sm);font-weight:500;transition:color var(--dur-fast),background-color var(--dur-fast)}
-.nav-list-item a:hover{color:var(--color-text);background:oklch(1 0 0 / .05)}
-.nav-list-item-active a{color:var(--color-text);background:oklch(1 0 0 / .08)}
-.nav-toggle{display:inline-flex}
-.nav-drawer{position:fixed;top:var(--header-h);left:0;right:0;background:var(--color-bg-alt);border-bottom:1px solid var(--color-border);padding:var(--space-2) var(--space-3) var(--space-3);box-shadow:var(--elevation-3)}
-.nav-drawer .nav-list{flex-direction:column}
-.nav-drawer .nav-list-item a{font-size:var(--text-md);padding-inline:var(--space-2)}
-@media (min-width:1024px){.nav-menu{display:block}.nav-toggle{display:none}.nav-drawer{display:none!important}}
-
-.settings-panel{position:absolute;top:calc(var(--header-h) - 4px);right:var(--space-3);width:min(22rem,calc(100vw - 2 * var(--space-3)));padding:var(--space-3);display:flex;flex-direction:column;gap:var(--space-3);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);box-shadow:var(--elevation-3)}
-.settings-panel-title{font-size:var(--text-md);font-weight:600}
-.settings-group{border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:var(--space-1)}
-.settings-group legend{font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-1);padding:0}
-.segmented-control{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:var(--space-half);padding:var(--space-half);border-radius:var(--radius-pill);background:var(--color-bg);border:1px solid var(--color-border)}
-.segmented-control-option{position:relative}
-.segmented-control-option input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
-.segmented-control-option span{display:flex;align-items:center;justify-content:center;min-height:40px;border-radius:var(--radius-pill);font-size:var(--text-sm);font-weight:500;color:var(--color-text-muted);transition:background-color var(--dur-fast),color var(--dur-fast)}
-.segmented-control-option input:checked + span{background:var(--color-white);color:var(--color-on-accent)}
-.segmented-control-option input:checked + span::before{content:"✓ "}
-.segmented-control-option input:focus-visible + span{outline:3px solid var(--color-focus);outline-offset:2px}
-
-.scroll-progress{position:fixed;top:0;left:0;height:3px;width:100%;z-index:60;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--color-bubu-blue),var(--color-dudu-red))}
-
-/* =========================================================
-   COMPONENT: hero-banner
-   ========================================================= */
-.hero-banner{min-height:calc(100svh - var(--header-h));display:flex;align-items:center;padding-block:var(--space-8)}
-.hero-banner-grid{display:grid;gap:var(--space-6);align-items:center}
-@media (min-width:960px){.hero-banner-grid{grid-template-columns:1.15fr .85fr;gap:var(--space-8)}}
-.hero-banner-content{display:flex;flex-direction:column;gap:var(--space-4)}
-.hero-banner-kicker{display:flex;flex-wrap:wrap;gap:var(--space-1)}
-.hero-banner-title{font-family:var(--font-display);font-weight:400;font-size:var(--text-4xl);line-height:1.05;letter-spacing:-0.02em}
-.hero-banner-title-blue{color:var(--color-soft-blue)}
-.hero-banner-title-red{color:var(--color-soft-red);font-style:italic}
-.hero-banner-verbs{font-size:var(--text-lg);line-height:var(--leading-snug);color:var(--color-text-soft)}
-.hero-banner-verbs li{display:inline}
-.hero-banner-verbs li:not(:last-child)::after{content:", "}
-.hero-banner-verbs strong{color:var(--color-text);font-weight:600}
-.hero-banner-quip{padding-left:var(--space-2);border-left:0;font-family:var(--font-display);font-style:italic;font-size:var(--text-xl);line-height:var(--leading-snug);color:var(--color-text)}
-.hero-banner-quip small{display:block;font-family:var(--font-body);font-style:normal;font-size:var(--text-sm);color:var(--color-text-muted);margin-top:var(--space-1)}
-.hero-banner-actions{display:flex;flex-wrap:wrap;gap:var(--space-2)}
-
-.couple-portrait{position:relative;margin-inline:auto;width:min(100%,24rem)}
-.couple-portrait-frame{position:relative;aspect-ratio:1;border-radius:50%;overflow:hidden;background:var(--color-surface);border:1px solid var(--glass-border);box-shadow:var(--elevation-3)}
-.couple-portrait-frame img{width:100%;height:100%;object-fit:cover}
-.couple-portrait::before,.couple-portrait::after{content:"";position:absolute;inset:-10px;border-radius:50%;border:2px solid transparent;pointer-events:none}
-.couple-portrait::before{border-left-color:var(--color-bubu-blue);border-bottom-color:var(--color-bubu-blue);transform:rotate(-10deg)}
-.couple-portrait::after{border-right-color:var(--color-dudu-red);border-top-color:var(--color-dudu-red);transform:rotate(-10deg)}
-.couple-portrait-label{position:absolute;bottom:8%;display:flex;flex-direction:column;padding:var(--space-1) var(--space-2);border-radius:var(--radius-md);font-size:var(--text-sm);line-height:1.3;box-shadow:var(--elevation-2)}
-.couple-portrait-label strong{font-size:var(--text-base)}
-.couple-portrait-label-bubu{left:-4%;background:var(--color-bubu-blue);color:var(--color-on-accent)}
-.couple-portrait-label-dudu{right:-4%;background:var(--color-dudu-red);color:var(--color-on-accent);text-align:right}
-.floating-heart{position:absolute;font-size:var(--text-lg);pointer-events:none;animation:heart-drift 7s ease-in-out infinite;opacity:.8}
-.floating-heart-blue{color:var(--color-bubu-blue);left:-6%;top:12%}
-.floating-heart-red{color:var(--color-dudu-red);right:0;top:-2%;animation-delay:-3s}
-.floating-heart-small{font-size:var(--text-sm);right:-8%;top:40%;color:var(--color-soft-red);animation-delay:-5s}
-@keyframes heart-drift{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-14px) rotate(6deg)}}
-
-/* =========================================================
-   COMPONENT: coaster-ride (timeline)
-   ========================================================= */
-.coaster-ride{display:flex;flex-direction:column;gap:var(--space-4)}
-.coaster-track{position:relative;padding:var(--space-2) var(--space-1) 0;overflow:hidden}
-.coaster-track svg{width:100%;height:auto;display:block;overflow:visible}
-.coaster-track-support{stroke:var(--color-border);stroke-width:1.5}
-.coaster-track-rail-base{fill:none;stroke:var(--color-border-strong);stroke-width:3;stroke-linecap:round}
-.coaster-track-rail-blue{fill:none;stroke:var(--color-bubu-blue);stroke-width:3.5;stroke-linecap:round}
-.coaster-track-rail-red{fill:none;stroke:var(--color-dudu-red);stroke-width:3.5;stroke-linecap:round}
-.coaster-track-stop{fill:var(--color-bg);stroke:var(--color-text-muted);stroke-width:2;transition:fill var(--dur-base),stroke var(--dur-base)}
-.coaster-track-stop-passed{fill:var(--color-text);stroke:var(--color-text)}
-.coaster-track-stop-label{font-family:var(--font-mono);font-size:16px;fill:var(--color-text-muted);text-anchor:middle}
-.coaster-track-cart-bubu{fill:var(--color-bubu-blue)}
-.coaster-track-cart-dudu{fill:var(--color-dudu-red)}
-.coaster-track-cart-body{fill:var(--color-white)}
-.coaster-tabs{display:flex;gap:var(--space-1);overflow-x:auto;scroll-snap-type:x mandatory;padding:var(--space-half) var(--space-half) var(--space-1);margin-inline:calc(-1 * var(--space-half));scrollbar-width:thin}
-@media (min-width:1024px){.coaster-tabs{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));overflow:visible}}
-.coaster-tab{flex:none;scroll-snap-align:start;display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-height:56px;min-width:8.5rem;padding:var(--space-1) var(--space-2);border-radius:var(--radius-md);border:1px solid var(--color-border);background:transparent;text-align:left;transition:border-color var(--dur-fast),background-color var(--dur-fast)}
-@media (min-width:1024px){.coaster-tab{min-width:0}}
-.coaster-tab:hover{border-color:var(--color-text-muted)}
-.coaster-tab-number{font-family:var(--font-mono);font-size:var(--text-xs);color:var(--color-text-muted)}
-.coaster-tab-name{font-size:var(--text-sm);font-weight:600;line-height:1.25}
-.coaster-tab[aria-selected="true"]{background:var(--color-white);color:var(--color-on-accent);border-color:var(--color-white)}
-.coaster-tab[aria-selected="true"] .coaster-tab-number{color:var(--color-on-accent)}
-.coaster-panel{display:grid;gap:var(--space-4);padding:var(--space-4) var(--space-3)}
-@media (min-width:768px){.coaster-panel{grid-template-columns:auto 1fr auto;align-items:center;padding:var(--space-5) var(--space-6)}}
-.coaster-panel-index{font-family:var(--font-display);font-size:var(--text-4xl);line-height:1;color:var(--color-text-muted);font-style:italic}
-.coaster-panel-body{display:flex;flex-direction:column;gap:var(--space-2);min-height:9rem}
-.coaster-panel-feel{align-self:flex-start}
-.coaster-panel-title{font-family:var(--font-display);font-weight:400;font-size:var(--text-2xl);line-height:var(--leading-snug)}
-.coaster-panel-text{font-size:var(--text-md);color:var(--color-text-soft);white-space:pre-line}
-.coaster-panel-nav{display:flex;gap:var(--space-1)}
-.coaster-panel-animating .coaster-panel-body{animation:panel-in var(--dur-base) var(--ease-out)}
-@keyframes panel-in{from{opacity:0;transform:translateY(8px)}}
-.coaster-finale{text-align:center;font-family:var(--font-display);font-size:var(--text-2xl);line-height:var(--leading-snug)}
-.coaster-finale span{display:block}
-.coaster-finale span:last-child{font-style:italic;color:var(--color-soft-red)}
-
-/* =========================================================
-   COMPONENT: family-grid / family-card
-   ========================================================= */
-.family-grid{display:grid;gap:var(--space-2);grid-template-columns:repeat(auto-fill,minmax(min(100%,15rem),1fr))}
-.family-card{position:relative;display:flex;flex-direction:column;gap:var(--space-2);padding:var(--space-3);border-radius:var(--radius-lg);background:var(--color-surface);border:1px solid var(--color-border);box-shadow:var(--elevation-1);transition:transform var(--dur-base) var(--ease-spring),box-shadow var(--dur-base)}
-.family-card:hover{transform:translateY(-4px) rotate(-.6deg);box-shadow:var(--elevation-2)}
-.family-card-head{display:flex;align-items:center;justify-content:space-between;gap:var(--space-2)}
-.family-card-avatar{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-size:1.75rem;background:var(--color-surface-raised);border:1px solid var(--color-border)}
-.family-card-name{font-family:var(--font-display);font-size:var(--text-xl);line-height:var(--leading-snug);font-weight:400}
-.family-card-role{color:var(--color-text-soft)}
-.family-card-real{border-color:var(--color-dudu-red)}
-.family-parents{margin-top:var(--space-6);display:grid;gap:var(--space-3);padding:var(--space-4) var(--space-3);text-align:center;justify-items:center}
-@media (min-width:768px){.family-parents{padding:var(--space-6)}}
-.family-parents-intro{color:var(--color-text-muted);font-size:var(--text-md)}
-.family-parents-names{font-family:var(--font-display);font-size:var(--text-3xl);line-height:var(--leading-tight)}
-.family-parents-names .is-blue{color:var(--color-soft-blue)}
-.family-parents-names .is-red{color:var(--color-soft-red)}
-.family-parents-text{max-width:32rem;font-size:var(--text-md);color:var(--color-text-soft)}
-
-/* =========================================================
-   COMPONENT: love-card (flip)
-   ========================================================= */
-.love-grid{display:grid;gap:var(--space-2);grid-template-columns:repeat(auto-fill,minmax(min(100%,16rem),1fr))}
-.love-card{perspective:1000px;min-height:16rem}
-.love-card-button{position:relative;width:100%;height:100%;min-height:16rem;border:0;padding:0;background:none;text-align:left;transform-style:preserve-3d;transition:transform var(--dur-slow) var(--ease-out);border-radius:var(--radius-lg)}
-.love-card-open .love-card-button{transform:rotateY(180deg)}
-.love-card-face{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;gap:var(--space-2);padding:var(--space-3);border-radius:var(--radius-lg);border:1px solid var(--color-border);-webkit-backface-visibility:hidden;backface-visibility:hidden;box-shadow:var(--elevation-1)}
-.love-card-front{background:var(--color-surface)}
-.love-card-button:hover .love-card-front{border-color:var(--color-text-muted)}
-.love-card-back{transform:rotateY(180deg);overflow-y:auto;background:var(--color-surface-raised);border-color:var(--color-soft-red)}
-.love-card-index{font-family:var(--font-mono);font-size:var(--text-xs);color:var(--color-text-muted)}
-.love-card-title{font-family:var(--font-display);font-size:var(--text-xl);line-height:var(--leading-snug)}
-.love-card-hint{display:flex;align-items:center;gap:var(--space-1);font-size:var(--text-sm);color:var(--color-text-muted)}
-.love-card-message{font-size:var(--text-base);line-height:var(--leading-body);color:var(--color-text)}
-.love-card-sign{font-size:var(--text-sm);color:var(--color-soft-blue)}
-.love-progress{margin-top:var(--space-3);color:var(--color-text-muted);font-size:var(--text-sm);text-align:center}
-
-/* =========================================================
-   COMPONENT: tease-panel
-   ========================================================= */
-.tease-section{background:var(--color-bg-alt);border-block:1px solid var(--color-border)}
-.tease-list{display:grid;gap:var(--space-2);grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr));margin-bottom:var(--space-6)}
-.tease-item{display:flex;flex-direction:column;gap:var(--space-1);padding:var(--space-3);border-radius:var(--radius-lg);border:1px solid var(--color-border);background:var(--color-surface)}
-.tease-item-setup{color:var(--color-text-muted);font-size:var(--text-md)}
-.tease-item-punch{font-family:var(--font-display);font-style:italic;font-size:var(--text-xl);line-height:var(--leading-snug);color:var(--color-text)}
-.tease-actions{display:grid;gap:var(--space-2);grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr))}
-.tease-reveal{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-2);padding:var(--space-3);border-radius:var(--radius-lg);border:1px dashed var(--color-border-strong);min-height:10rem}
-.tease-reveal-answer{font-family:var(--font-display);font-size:var(--text-xl);line-height:var(--leading-snug);animation:panel-in var(--dur-slow) var(--ease-spring)}
-.tease-reveal-done{border-style:solid;border-color:var(--color-soft-red)}
-
-/* =========================================================
-   COMPONENT: badge-grid / badge-item
-   ========================================================= */
-.badge-grid{display:grid;gap:var(--space-2);grid-template-columns:repeat(auto-fill,minmax(min(100%,15rem),1fr))}
-.badge-item{display:flex;align-items:center;gap:var(--space-2);width:100%;min-height:72px;padding:var(--space-2);border-radius:var(--radius-md);border:1px solid var(--color-border);background:var(--color-surface);text-align:left;transition:border-color var(--dur-fast),transform var(--dur-fast)}
-.badge-item:hover{border-color:var(--color-text-muted)}
-.badge-item-medal{flex:none;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font-size:1.375rem;background:var(--color-bg);border:1.5px dashed var(--color-border-strong);filter:grayscale(1);opacity:.7;transition:filter var(--dur-base),opacity var(--dur-base),transform var(--dur-base) var(--ease-spring)}
-.badge-item-text{display:flex;flex-direction:column;gap:2px;min-width:0}
-.badge-item-name{font-weight:600;line-height:1.3}
-.badge-item-status{font-size:var(--text-xs);color:var(--color-text-muted);letter-spacing:.04em;text-transform:uppercase}
-.badge-item[aria-pressed="true"]{border-color:var(--color-soft-blue)}
-.badge-item[aria-pressed="true"] .badge-item-medal{filter:none;opacity:1;border-style:solid;border-color:var(--gold-400);transform:rotate(-8deg) scale(1.06)}
-.badge-item[aria-pressed="true"] .badge-item-status{color:var(--color-success)}
-.badge-final{margin-top:var(--space-4);display:flex;flex-direction:column;align-items:center;text-align:center;gap:var(--space-2);padding:var(--space-4) var(--space-3);border-radius:var(--radius-lg);border:1.5px dashed var(--color-border-strong)}
-.badge-final-medal{width:88px;height:88px;border-radius:50%;display:grid;place-items:center;font-size:2.5rem;background:var(--color-bg);border:2px dashed var(--color-border-strong);filter:grayscale(1);opacity:.6;transition:all var(--dur-slow) var(--ease-spring)}
-.badge-final-title{font-family:var(--font-display);font-size:var(--text-2xl);line-height:var(--leading-snug)}
-.badge-final-status{font-size:var(--text-sm);color:var(--color-text-muted)}
-.badge-final-unlocked{border-style:solid;border-color:var(--gold-400);box-shadow:0 0 48px oklch(0.84 0.1 85 / .18)}
-.badge-final-unlocked .badge-final-medal{filter:none;opacity:1;border-style:solid;border-color:var(--gold-400);transform:scale(1.08)}
-.badge-final-unlocked .badge-final-status{color:var(--color-success)}
-.badge-toolbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--space-2);margin-bottom:var(--space-3)}
-.badge-counter{font-family:var(--font-mono);font-size:var(--text-sm);color:var(--color-text-soft)}
-
-/* =========================================================
-   COMPONENT: stats-grid / stat-tile
-   ========================================================= */
-.stats-grid{display:grid;gap:var(--space-2);grid-template-columns:repeat(2,minmax(0,1fr))}
-@media (min-width:768px){.stats-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
-@media (min-width:1200px){.stats-grid{grid-template-columns:repeat(5,minmax(0,1fr))}}
-.stat-tile{display:flex;flex-direction:column;justify-content:space-between;gap:var(--space-2);min-height:9rem;padding:var(--space-3) var(--space-2);border-radius:var(--radius-md);background:var(--color-surface);border:1px solid var(--color-border)}
-@media (min-width:768px){.stat-tile{padding:var(--space-3)}}
-.stat-tile-value{font-family:var(--font-display);font-size:clamp(2rem,6vw,3rem);line-height:1;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
-.stat-tile-value-text{font-size:clamp(1.5rem,4vw,2rem);font-style:italic}
-.stat-tile-label{font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.3}
-.stat-tile-blue .stat-tile-value{color:var(--color-soft-blue)}
-.stat-tile-red .stat-tile-value{color:var(--color-soft-red)}
-.stat-tile-wide{grid-column:span 2}
-@media (min-width:1200px){.stat-tile-wide{grid-column:span 1}}
-.easter-egg{margin-top:var(--space-4);display:flex;justify-content:flex-end}
-.easter-egg-button{min-height:var(--tap-min);padding:var(--space-1) var(--space-2);border:1px dashed var(--color-border);border-radius:var(--radius-pill);background:none;color:var(--color-text-muted);font-size:var(--text-xs);letter-spacing:.06em;transition:color var(--dur-fast),border-color var(--dur-fast)}
-.easter-egg-button:hover{color:var(--color-soft-red);border-color:var(--color-soft-red)}
-
-/* =========================================================
-   COMPONENT: release-card (software section)
-   ========================================================= */
-.release-card{font-family:var(--font-mono);font-size:var(--text-sm);line-height:1.7;background:oklch(0.12 0.02 265);border:1px solid var(--color-border);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--elevation-3)}
-html[data-theme="contrast"] .release-card{background:#000}
-.release-card-bar{display:flex;align-items:center;gap:var(--space-1);padding:var(--space-1) var(--space-2);border-bottom:1px solid var(--color-border);background:var(--color-surface)}
-.release-card-dot{width:10px;height:10px;border-radius:50%;background:var(--color-border-strong)}
-.release-card-dot:nth-child(1){background:var(--color-dudu-red)}
-.release-card-dot:nth-child(2){background:var(--gold-400)}
-.release-card-dot:nth-child(3){background:var(--color-bubu-blue)}
-.release-card-file{margin-left:var(--space-1);color:var(--color-text-muted)}
-.release-card-body{display:grid;gap:var(--space-4);padding:var(--space-3)}
-@media (min-width:900px){.release-card-body{grid-template-columns:minmax(0,1fr) minmax(0,1fr);padding:var(--space-4)}}
-.release-card-title{font-family:var(--font-mono);font-size:var(--text-xl);font-weight:600;line-height:1.3;margin-bottom:var(--space-2)}
-.release-meta{display:grid;grid-template-columns:auto 1fr;gap:var(--space-1) var(--space-3)}
-.release-meta dt{color:var(--color-text-muted)}
-.release-meta dd{color:var(--color-text)}
-.release-status{display:inline-flex;align-items:center;gap:var(--space-1);color:var(--color-success);font-weight:600}
-.release-status::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor;box-shadow:0 0 0 4px oklch(0.82 0.11 155 / .2);animation:pulse 2s ease-in-out infinite}
-@keyframes pulse{50%{box-shadow:0 0 0 8px oklch(0.82 0.11 155 / 0)}}
-.release-block{display:flex;flex-direction:column;gap:var(--space-1)}
-.release-block + .release-block{margin-top:var(--space-3)}
-.release-block-label{color:var(--color-text-muted);text-transform:uppercase;letter-spacing:.1em;font-size:var(--text-xs)}
-.release-list li{display:flex;gap:var(--space-1)}
-.release-list-issue li::before{content:"!";color:var(--gold-400);font-weight:600}
-.release-list-patch li::before{content:"+";color:var(--color-success);font-weight:600}
-.release-list-patch li:last-child::before{content:"~";color:var(--color-soft-red)}
-.release-terminal{margin-top:var(--space-3);display:flex;flex-direction:column;gap:var(--space-2);padding:var(--space-2);border-radius:var(--radius-sm);background:var(--color-bg);border:1px solid var(--color-border)}
-.release-terminal-prompt{color:var(--color-text-muted)}
-.release-terminal-output{min-height:3.4em;white-space:pre-wrap}
-.release-terminal-error{color:var(--color-error)}
-.release-warning{grid-column:1 / -1;padding:var(--space-2);border-radius:var(--radius-sm);border:1px solid var(--gold-400);color:var(--gold-400);display:flex;gap:var(--space-1)}
-.release-warning::before{content:"⚠"}
-
-/* =========================================================
-   COMPONENT: photo-wall / photo-slot (with states)
-   ========================================================= */
-.photo-wall{display:grid;gap:var(--space-2);grid-template-columns:repeat(2,minmax(0,1fr))}
-@media (min-width:768px){.photo-wall{grid-template-columns:repeat(3,minmax(0,1fr))}}
-.photo-slot{display:flex;flex-direction:column;gap:var(--space-1)}
-.photo-slot-media{position:relative;aspect-ratio:4/5;border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--color-border);background:repeating-linear-gradient(135deg,var(--color-surface) 0 10px,var(--color-bg-alt) 10px 20px)}
-.photo-slot:nth-child(3n+2) .photo-slot-media{aspect-ratio:1}
-.photo-slot-media img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity var(--dur-slow)}
-.photo-slot-loaded .photo-slot-media img{opacity:1}
-.photo-slot-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--space-1);padding:var(--space-2);text-align:center;font-family:var(--font-mono);font-size:var(--text-xs);color:var(--color-text-muted)}
-.photo-slot-placeholder strong{color:var(--color-text-soft);font-weight:600}
-.photo-slot-loading .photo-slot-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,oklch(1 0 0 / .06),transparent);animation:shimmer 1.2s infinite}
-@keyframes shimmer{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
-.photo-slot-loaded .photo-slot-placeholder{display:none}
-.photo-slot-error .photo-slot-media{border-style:dashed;border-color:var(--color-error)}
-.photo-slot-caption{font-size:var(--text-sm);line-height:1.4;color:var(--color-text-soft)}
-.photo-wall-note{margin-top:var(--space-3);font-size:var(--text-sm);color:var(--color-text-muted)}
-
-/* =========================================================
-   COMPONENT: love-letter
-   ========================================================= */
-.love-letter{position:relative;padding:var(--space-6) var(--space-3);border-radius:var(--radius-lg);background:var(--ink-50);color:oklch(0.22 0.03 265);box-shadow:var(--elevation-3)}
-@media (min-width:768px){.love-letter{padding:var(--space-8) var(--space-8)}}
-html[data-theme="contrast"] .love-letter{background:#fff;color:#000}
-.love-letter::before{content:"";position:absolute;top:0;left:var(--space-3);right:var(--space-3);height:4px;border-radius:0 0 4px 4px;background:linear-gradient(90deg,var(--blue-500) 50%,var(--red-500) 50%)}
-.love-letter-stamp{position:absolute;top:var(--space-3);right:var(--space-3);width:56px;height:56px;border-radius:50%;display:grid;place-items:center;border:1.5px dashed var(--red-800);color:var(--red-800);font-family:var(--font-mono);font-size:10px;line-height:1.2;text-align:center;transform:rotate(12deg)}
-.love-letter-greeting{font-family:var(--font-display);font-size:var(--text-2xl);line-height:var(--leading-snug);margin-bottom:var(--space-3)}
-.love-letter-body{display:flex;flex-direction:column;gap:var(--space-2);font-size:var(--text-md);line-height:1.66}
-.love-letter-closing{margin-top:var(--space-4);display:flex;flex-direction:column;gap:var(--space-2)}
-.love-letter-closing p:first-child{font-weight:600}
-.love-letter-closing-quote{font-family:var(--font-display);font-style:italic;font-size:var(--text-xl);line-height:var(--leading-snug)}
-.love-letter-sign{font-family:var(--font-display);font-size:var(--text-xl);line-height:var(--leading-snug)}
-.love-letter-sign span{display:block;color:var(--blue-800)}
-
-/* =========================================================
-   COMPONENT: final-question + celebration-layer
-   ========================================================= */
-.final-question{min-height:100svh;display:grid;place-items:center;text-align:center;padding-block:var(--space-12)}
-.final-question > .page-container{width:100%}
-.final-question-inner{display:flex;flex-direction:column;align-items:center;gap:var(--space-4)}
-.final-question-eyebrow{font-size:var(--text-sm);font-weight:600;letter-spacing:var(--tracking-eyebrow);text-transform:uppercase;color:var(--color-text-muted)}
-.final-question-title{font-family:var(--font-display);font-weight:400;font-size:var(--text-4xl);line-height:var(--leading-tight);letter-spacing:var(--tracking-display)}
-.final-question-lede{font-size:var(--text-lg);color:var(--color-text-soft)}
-.final-question-ask{font-family:var(--font-display);font-style:italic;font-size:var(--text-3xl);line-height:var(--leading-snug);color:var(--color-soft-red)}
-.final-question-actions{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:var(--space-2)}
-.final-question-obvious{transform:rotate(-2deg);box-shadow:var(--glow-red)}
-.final-question-obvious:hover{transform:rotate(0) scale(1.04)}
-.final-question-hint{font-size:var(--text-sm);color:var(--color-text-muted);min-height:1.5em}
-.final-answer{display:flex;flex-direction:column;align-items:center;text-align:center;gap:var(--space-3)}
-.final-answer-good{font-family:var(--font-display);font-size:clamp(4rem,18vw,9rem);line-height:.9;letter-spacing:-.02em;animation:good-pop var(--dur-slow) var(--ease-spring)}
-.final-answer-good span:first-child{color:var(--color-soft-blue)}
-.final-answer-good span:last-child{color:var(--color-soft-red)}
-.final-answer-text{font-size:var(--text-xl);line-height:var(--leading-snug)}
-.final-answer-wish{font-family:var(--font-display);font-style:italic;font-size:var(--text-2xl);line-height:var(--leading-snug);color:var(--color-soft-red)}
-@keyframes good-pop{from{opacity:0;transform:scale(.6)}}
-.celebration-layer{position:fixed;inset:0;pointer-events:none;z-index:120;overflow:hidden}
-.celebration-layer canvas{width:100%;height:100%;display:block}
-.celebration-floater{position:absolute;bottom:-80px;display:flex;flex-direction:column;align-items:center;gap:4px;font-size:2.25rem;animation:float-up linear forwards}
-.celebration-floater small{font-family:var(--font-body);font-size:var(--text-xs);font-weight:600;color:var(--color-text);background:var(--color-surface);border:1px solid var(--color-border);padding:2px 8px;border-radius:var(--radius-pill)}
-.celebration-floater img{width:72px;height:72px;border-radius:50%;border:2px solid var(--color-white);box-shadow:var(--elevation-2)}
-@keyframes float-up{0%{transform:translateY(0) rotate(-8deg);opacity:0}10%{opacity:1}100%{transform:translateY(-115vh) rotate(8deg);opacity:1}}
-
-/* =========================================================
-   COMPONENT: notice-modal (native dialog)
-   ========================================================= */
-.notice-modal{width:min(30rem,calc(100vw - 2 * var(--space-3)));padding:0;border:1px solid var(--color-border);border-radius:var(--radius-lg);background:var(--color-surface);color:var(--color-text);box-shadow:var(--elevation-3)}
-.notice-modal::backdrop{background:oklch(0.1 0.02 265 / .75);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
-.notice-modal[open]{animation:panel-in var(--dur-base) var(--ease-spring)}
-.notice-modal-inner{display:flex;flex-direction:column;gap:var(--space-3);padding:var(--space-4) var(--space-3)}
-@media (min-width:768px){.notice-modal-inner{padding:var(--space-5)}}
-.notice-modal-eyebrow{font-size:var(--text-sm);color:var(--color-text-muted)}
-.notice-modal-title{font-family:var(--font-display);font-weight:400;font-size:var(--text-2xl);line-height:var(--leading-snug)}
-.notice-modal-list{display:flex;flex-direction:column;gap:var(--space-1)}
-.notice-modal-list li{display:flex;justify-content:space-between;gap:var(--space-2);padding:var(--space-1) 0;border-bottom:1px dashed var(--color-border)}
-.notice-modal-list li span:last-child{font-family:var(--font-mono);color:var(--color-soft-blue)}
-.notice-modal-terms{font-size:var(--text-sm);color:var(--color-soft-red)}
-.notice-modal-actions{display:flex;flex-wrap:wrap;gap:var(--space-1)}
-
-/* COMPONENT: site-footer */
-.site-footer{padding-block:var(--space-6);border-top:1px solid var(--color-border)}
-.site-footer-inner{display:flex;flex-wrap:wrap;gap:var(--space-2);justify-content:space-between;align-items:center;font-size:var(--text-sm);color:var(--color-text-muted)}
-.site-footer-version{font-family:var(--font-mono)}
-
-@media print{.site-header,.intro-screen,.ambient-glow,.celebration-layer,.scroll-progress{display:none!important}body{background:#fff;color:#000}}
+html{scroll-behavior:smooth}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}body{margin:0;overflow-x:hidden;background:oklch(0.17 0.03 265);-webkit-font-smoothing:antialiased}
+a{color:oklch(0.82 0.09 250)}a:hover{color:oklch(0.82 0.1 18)}
 </style>
-</head>
-<body class="intro-open">
-<a class="skip-link" href="#main">Skip to our story</a>
-<div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
-<div class="ambient-glow" aria-hidden="true"><div class="ambient-glow-bubu"></div><div class="ambient-glow-dudu"></div></div>
+</helmet>
+<main ref="{{ rootRef }}" style="min-height:100vh;background:oklch(0.17 0.03 265);color:oklch(0.96 0.01 265);font-family:'Bricolage Grotesque',system-ui,sans-serif;padding:clamp(24px,6vw,72px) clamp(16px,5vw,64px);box-sizing:border-box">
+  <div style="max-width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(88px,12vw,160px)">
+    <header data-reveal-group style="display:flex;flex-direction:column;gap:24px;max-width:46rem;margin-bottom:-24px">
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:oklch(0.78 0.03 265)">
+        <span style="display:flex;gap:4px;flex:none"><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.72 0.12 250)"></span><span style="width:8px;height:8px;border-radius:50%;background:oklch(0.68 0.16 18)"></span></span>
+        <span style="white-space:nowrap">Monthsary No. 22</span><span style="white-space:nowrap">Oct 29, 2026</span>
+      </div>
+      <h1 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(44px,8vw,88px);line-height:1;letter-spacing:-0.02em;text-wrap:balance"><span data-word style="display:inline-block">Month</span> <span data-word style="display:inline-block">22.</span> <em style="color:oklch(0.82 0.1 18)"><span data-word style="display:inline-block">Every</span> <span data-word style="display:inline-block">ticket</span> <span data-word style="display:inline-block">wins.</span></em></h1>
+      <p style="margin:0;font-size:clamp(17px,2vw,20px);line-height:1.55;color:oklch(0.85 0.02 265);text-wrap:pretty">Six scratch-offs for Dudu. Kuskusin mo, Lala. Each one is a promise for this month, so screenshot it, redeem it, and hold me to it.</p>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px">
+        <span data-count style="display:inline-block;font-family:'JetBrains Mono',monospace;font-size:14px;white-space:nowrap;color:oklch(0.85 0.02 265)">{{ revealedCount }} / 6 scratched</span>
+        <div style="flex:1;min-width:140px;max-width:260px;height:6px;border-radius:3px;background:oklch(0.28 0.03 265);overflow:hidden"><div style="height:100%;width:{{ progressPct }};background:linear-gradient(90deg,oklch(0.72 0.12 250),oklch(0.68 0.16 18));transition:width .5s"></div></div>
+        <button onClick="{{ revealAll }}" style="min-height:44px;padding:0 18px;border-radius:999px;border:1px solid oklch(0.4 0.03 265);background:transparent;color:oklch(0.92 0.01 265);font:inherit;font-size:14px;white-space:nowrap;cursor:pointer" style-hover="border-color:oklch(0.7 0.03 265)">Reveal all (no patience mode)</button>
+      </div>
+    </header>
 
-<!-- ================= 01 · intro-screen ================= -->
-<div class="intro-screen" id="intro-screen" role="dialog" aria-modal="true" aria-labelledby="intro-greeting" data-layer="intro-screen">
-  <div class="intro-screen-inner">
-    <p class="intro-screen-line intro-screen-greeting" id="intro-greeting">Hey Dudu… <em>❤️</em></p>
-    <p class="intro-screen-line intro-screen-copy">Before you scroll…<br>I have something to remind you of.</p>
-    <p class="intro-screen-line intro-screen-count"><span>1 year.</span><span>9 months.</span><span><em>One ridiculous roller coaster.</em></span></p>
-    <div class="intro-screen-line"><button class="button button-primary button-large" id="intro-enter" type="button">Enter our little world <span class="button-arrow" aria-hidden="true">→</span></button></div>
-  </div>
-  <button class="button button-ghost button-small intro-screen-skip" type="button" id="intro-skip">Skip intro</button>
-</div>
+    <section aria-label="Scratch-off tickets" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:32px">
+      <sc-for list="{{ tickets }}" as="t" hint-placeholder-count="6">
+        <article data-reveal style="transition:transform .35s cubic-bezier(.2,.9,.3,1.3),box-shadow .35s;display:flex;flex-direction:column;border-radius:20px;background:oklch(0.97 0.012 80);color:oklch(0.2 0.03 265);overflow:hidden;box-shadow:inset 0 2px 0 oklch(1 0 0 / .9),inset 0 -4px 0 oklch(0.84 0.02 80),0 2px 0 oklch(0.7 0.02 80),0 22px 40px -18px oklch(0 0 0 / .75)" style-hover="transform:translateY(-6px);box-shadow:inset 0 2px 0 oklch(1 0 0 / .9),inset 0 -4px 0 oklch(0.84 0.02 80),0 2px 0 oklch(0.7 0.02 80),0 34px 50px -18px oklch(0 0 0 / .8)">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 20px;background:{{ t.accent }};box-shadow:inset 0 1px 0 oklch(1 0 0 / .3),inset 0 -2px 0 oklch(0 0 0 / .18);text-shadow:0 1px 0 oklch(0 0 0 / .25);color:oklch(0.99 0 0);font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase">
+            <span style="white-space:nowrap">Ticket {{ t.no }}</span><span style="white-space:nowrap">Bubu Lotto · M22</span>
+          </div>
+          <div style="position:relative;min-height:190px;padding:24px 22px;display:flex;flex-direction:column;justify-content:center;gap:10px">
+            <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:oklch(0.45 0.03 265)">You won</div>
+            <div data-prize style="font-family:'Instrument Serif',Georgia,serif;font-size:30px;line-height:1.1;text-wrap:balance">{{ t.prize }}</div>
+            <div style="font-size:15px;line-height:1.5;color:oklch(0.38 0.03 265);text-wrap:pretty">{{ t.fine }}</div>
+            <canvas data-scratch="{{ t.idx }}" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:grab;opacity:{{ t.foilOpacity }};pointer-events:{{ t.foilEvents }};transition:opacity .6s"></canvas>
+          </div>
+          <div style="border-top:2px dashed oklch(0.82 0.02 80);padding:12px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:44px">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:oklch(0.45 0.03 265)">{{ t.status }}</span>
+            <button onClick="{{ t.onReveal }}" disabled="{{ t.revealed }}" style="min-height:44px;padding:0 14px;border:0;border-radius:999px;background:oklch(0.22 0.03 265);color:oklch(0.97 0 0);font:inherit;font-size:14px;cursor:pointer;opacity:{{ t.btnOpacity }}">{{ t.btnLabel }}</button>
+          </div>
+        </article>
+      </sc-for>
+    </section>
 
-<!-- ================= site-header / nav-menu ================= -->
-<header class="site-header" data-layer="site-header">
-  <div class="page-container site-header-inner">
-    <a class="brand-logo" href="#top" aria-label="Bubu and Dudu — back to top">
-      <span class="brand-logo-mark" aria-hidden="true"></span>
-      <span class="brand-logo-text">Bubu <span>+</span> Dudu</span>
-    </a>
-    <nav class="nav-menu" aria-label="Sections">
-      <ul class="nav-list" data-nav-list>
-        <li class="nav-list-item"><a href="#ride">The ride</a></li>
-        <li class="nav-list-item"><a href="#family">Family</a></li>
-        <li class="nav-list-item"><a href="#love">Love</a></li>
-        <li class="nav-list-item"><a href="#survived">Survived</a></li>
-        <li class="nav-list-item"><a href="#stats">Stats</a></li>
-        <li class="nav-list-item"><a href="#release">v1.9.0</a></li>
-        <li class="nav-list-item"><a href="#photos">Photos</a></li>
-        <li class="nav-list-item"><a href="#letter">Letter</a></li>
-      </ul>
-    </nav>
-    <div class="site-header-actions">
-      <button class="button button-ghost button-small" type="button" id="settings-toggle" aria-expanded="false" aria-controls="settings-panel"><span aria-hidden="true">Aa</span><span class="visually-hidden">Display settings</span></button>
-      <button class="button button-ghost button-small nav-toggle" type="button" id="nav-toggle" aria-expanded="false" aria-controls="nav-drawer">Menu</button>
-    </div>
-  </div>
-  <div class="nav-drawer" id="nav-drawer" hidden>
-    <nav aria-label="Sections (mobile)"><ul class="nav-list" data-nav-list></ul></nav>
-  </div>
-  <div class="settings-panel" id="settings-panel" role="region" aria-labelledby="settings-title" hidden>
-    <p class="settings-panel-title" id="settings-title">Display settings</p>
-    <fieldset class="settings-group">
-      <legend>Text size</legend>
-      <div class="segmented-control">
-        <label class="segmented-control-option"><input type="radio" name="text-size" value="default" checked><span>A</span></label>
-        <label class="segmented-control-option"><input type="radio" name="text-size" value="large"><span>A+</span></label>
-        <label class="segmented-control-option"><input type="radio" name="text-size" value="larger"><span>A++</span></label>
+    <section aria-label="Sticker book" style="display:flex;flex-direction:column;gap:40px">
+      <div data-reveal-group style="display:flex;flex-direction:column;gap:12px;max-width:46rem">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:oklch(0.82 0.1 18)">Sticker Book</div>
+        <h2 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(34px,5vw,54px);line-height:1.05;text-shadow:0 3px 0 oklch(0.1 0.03 265),0 -1px 0 oklch(1 0 0 / .1);text-wrap:balance">Tayong dalawa, in sticker form.</h2>
+        <p style="margin:0;font-size:17px;line-height:1.55;color:oklch(0.85 0.02 265)">Drag mo sila kahit saan sa sheet. Tap for kilig.</p>
       </div>
-    </fieldset>
-    <fieldset class="settings-group">
-      <legend>Contrast</legend>
-      <div class="segmented-control">
-        <label class="segmented-control-option"><input type="radio" name="theme" value="default" checked><span>Standard</span></label>
-        <label class="segmented-control-option"><input type="radio" name="theme" value="contrast"><span>High</span></label>
+      <div data-reveal style="position:relative;display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:clamp(20px,3vw,36px);padding:clamp(24px,4vw,44px);border-radius:24px;background:radial-gradient(oklch(0.86 0.02 80) 1px,transparent 1.5px) 0 0/18px 18px,linear-gradient(180deg,oklch(0.96 0.018 82),oklch(0.92 0.022 80));box-shadow:inset 0 2px 0 oklch(1 0 0 / .9),inset 0 -5px 0 oklch(0.84 0.02 80),0 3px 0 oklch(0.7 0.02 80),0 26px 44px -20px oklch(0 0 0 / .8)">
+        <sc-for list="{{ stickers }}" as="s" hint-placeholder-count="9">
+          <div data-sticker style="position:relative;flex:none;width:{{ s.w }};max-width:100%;touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none;transition:scale .22s cubic-bezier(.2,.9,.3,1.4);display:flex;flex-direction:column;align-items:center;gap:10px">
+            <div data-bob style="width:100%">
+              <div data-card style="position:relative;padding:9px;background:oklch(1 0 0);border-radius:{{ s.or }};box-shadow:0 1px 0 oklch(0.9 0.01 80),0 3px 0 oklch(0.82 0.015 80),0 16px 22px -12px oklch(0.25 0.03 60 / .7);transition:transform .25s cubic-bezier(.2,.9,.3,1.4)" style-hover="transform:translateY(-5px) scale(1.04)">
+                <div role="img" aria-label="{{ s.cap }}" style="aspect-ratio:{{ s.ar }};border-radius:{{ s.r }};background-image:url('{{ s.src }}');background-size:{{ s.size }};background-position:{{ s.pos }};background-repeat:no-repeat;box-shadow:inset 0 0 0 1px oklch(0 0 0 / .06)"></div>
+                <span data-gloss aria-hidden="true" style="position:absolute;inset:9px;border-radius:{{ s.r }};background:linear-gradient(115deg,oklch(1 0 0 / 0) 30%,oklch(1 0 0 / .55) 45%,oklch(1 0 0 / 0) 60%);background-size:300% 100%;background-position:100% 0;pointer-events:none"></span>
+              </div>
+            </div>
+            <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:18px;color:oklch(0.35 0.03 265);text-align:center;white-space:nowrap">{{ s.cap }}</span>
+          </div>
+        </sc-for>
       </div>
-    </fieldset>
-    <fieldset class="settings-group">
-      <legend>Motion</legend>
-      <div class="segmented-control">
-        <label class="segmented-control-option"><input type="radio" name="motion" value="full" checked><span>Full</span></label>
-        <label class="segmented-control-option"><input type="radio" name="motion" value="reduced"><span>Reduced</span></label>
-      </div>
-    </fieldset>
-  </div>
-</header>
+    </section>
 
-<main id="main" tabindex="-1">
-
-<!-- ================= 02 · hero-banner ================= -->
-<section class="hero-banner" id="top" aria-labelledby="hero-title" data-layer="hero-banner">
-  <div class="page-container hero-banner-grid">
-    <div class="hero-banner-content">
-      <div class="hero-banner-kicker reveal">
-        <span class="tag tag-blue">Bubu · blue</span>
-        <span class="tag tag-red">Dudu · red</span>
+    <section aria-label="Claim booth" style="display:flex;flex-direction:column;gap:40px">
+      <div data-reveal-group style="display:flex;flex-direction:column;gap:12px;max-width:46rem">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:oklch(0.82 0.09 250)">Claim Booth</div>
+        <h2 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(34px,5vw,54px);line-height:1.05;text-shadow:0 3px 0 oklch(0.1 0.03 265),0 -1px 0 oklch(1 0 0 / .1);text-wrap:balance">Nanalo ka na. Claim mo na.</h2>
+        <p style="margin:0;font-size:17px;line-height:1.55;color:oklch(0.85 0.02 265)">Pick a scratched ticket and when you want it. I'll print the claim stub, and you show it to me.</p>
       </div>
-      <h1 class="hero-banner-title reveal" id="hero-title"><span class="hero-banner-title-blue">1 year</span><br>+ <span class="hero-banner-title-red">9 months</span></h1>
-      <p class="visually-hidden">1 Year, 9 Months of Us — A Beautifully Chaotic Love Story.</p>
-      <ul class="hero-banner-verbs reveal" aria-label="What we've been doing">
-        <li>of <strong>loving</strong></li><li><strong>fighting</strong></li><li><strong>laughing</strong></li><li><strong>annoying each other</strong></li><li><strong>making up</strong></li><li>and <strong>choosing each other again.</strong></li>
-      </ul>
-      <p class="hero-banner-quip reveal">Somehow, through all the chaos… you still haven't returned me for a refund.<small>No receipt. No warranty. No exchanges.</small></p>
-      <div class="hero-banner-actions reveal">
-        <a class="button button-blue" href="#ride">Keep scrolling, Dudu… <span class="button-arrow" aria-hidden="true">↓</span></a>
-      </div>
-    </div>
-    <div class="couple-portrait reveal">
-      <!-- REPLACE: swap src with a real photo of you two → assets/img_hero_couple_01.jpg (square, ≥800px) -->
-      <div class="couple-portrait-frame">
-        <img src="assets/img_hero_bubu-dudu_01.jpeg" alt="Bubu the brown bear and Dudu the white bear holding hands" width="228" height="221" decoding="async" fetchpriority="high" id="img_hero_bubu-dudu_01">
-      </div>
-      <span class="floating-heart floating-heart-blue" aria-hidden="true">♥</span>
-      <span class="floating-heart floating-heart-red" aria-hidden="true">♥</span>
-      <span class="floating-heart floating-heart-small" aria-hidden="true">♥</span>
-      <p class="couple-portrait-label couple-portrait-label-bubu"><strong>Bubu</strong>the clingy one</p>
-      <p class="couple-portrait-label couple-portrait-label-dudu"><strong>Dudu</strong>the chaotic one</p>
-    </div>
-  </div>
-</section>
-
-<!-- ================= 03 · coaster-ride ================= -->
-<section class="page-section" id="ride" aria-labelledby="ride-title" data-layer="coaster-ride">
-  <div class="page-container">
-    <div class="section-heading reveal">
-      <p class="section-heading-eyebrow">Chapter one</p>
-      <h2 class="section-heading-title" id="ride-title">Our love <em>roller coaster</em></h2>
-      <p class="section-heading-lede">Eight stops. Some ups, some very dramatic downs. Tap a stop or use the arrows — keep your arms inside the ride.</p>
-    </div>
-    <div class="coaster-ride reveal">
-      <div class="coaster-track" aria-hidden="true">
-        <svg viewBox="0 0 1000 320" id="coaster-svg" role="presentation">
-          <g id="coaster-supports"></g>
-          <path id="coaster-rail-base" class="coaster-track-rail-base" transform="translate(0,4)"></path>
-          <path id="coaster-rail-blue" class="coaster-track-rail-blue" transform="translate(0,-4)"></path>
-          <path id="coaster-rail-red" class="coaster-track-rail-red" transform="translate(0,4)"></path>
-          <g id="coaster-stops"></g>
-          <g id="coaster-cart">
-            <rect class="coaster-track-cart-body" x="-22" y="-16" width="44" height="14" rx="7"></rect>
-            <circle class="coaster-track-cart-bubu" cx="-9" cy="-24" r="9"></circle>
-            <circle class="coaster-track-cart-dudu" cx="9" cy="-24" r="9"></circle>
-          </g>
-        </svg>
-      </div>
-      <div class="coaster-tabs" role="tablist" aria-label="Roller coaster stops" id="coaster-tabs"></div>
-      <div class="coaster-panel glass-card" role="tabpanel" id="coaster-panel" aria-live="polite" tabindex="0">
-        <p class="coaster-panel-index" id="coaster-index" aria-hidden="true">01</p>
-        <div class="coaster-panel-body">
-          <span class="tag coaster-panel-feel" id="coaster-feel">↗ Climbing</span>
-          <h3 class="coaster-panel-title" id="coaster-title">The Beginning</h3>
-          <p class="coaster-panel-text" id="coaster-text">Where this crazy little story started.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:24px;align-items:start">
+        <div style="display:flex;flex-direction:column;gap:20px">
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:oklch(0.72 0.03 265)">1 · Ticket</span>
+            <sc-if value="{{ noneRevealed }}" hint-placeholder-val="{{ false }}"><span style="font-size:16px;color:oklch(0.8 0.02 265)">Scratch a ticket first, Lala.</span></sc-if>
+            <div style="display:flex;flex-wrap:wrap;gap:8px">
+              <sc-for list="{{ claimable }}" as="c" hint-placeholder-count="3">
+                <button onClick="{{ c.onPick }}" aria-pressed="{{ c.on }}" style="min-height:44px;padding:0 16px;border-radius:999px;border:1px solid {{ c.border }};background:{{ c.bg }};color:oklch(0.97 0.01 265);font:inherit;font-size:14px;white-space:nowrap;flex:none;cursor:pointer">{{ c.label }}</button>
+              </sc-for>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:oklch(0.72 0.03 265)">2 · When</span>
+            <div style="display:flex;flex-wrap:wrap;gap:8px">
+              <sc-for list="{{ whens }}" as="w" hint-placeholder-count="3">
+                <button onClick="{{ w.onPick }}" aria-pressed="{{ w.on }}" style="min-height:44px;padding:0 16px;border-radius:999px;border:1px solid {{ w.border }};background:{{ w.bg }};color:oklch(0.97 0.01 265);font:inherit;font-size:14px;white-space:nowrap;flex:none;cursor:pointer">{{ w.label }}</button>
+              </sc-for>
+            </div>
+          </div>
+          <button onClick="{{ printStub }}" disabled="{{ cantPrint }}" style="align-self:flex-start;min-height:48px;padding:0 24px;border:0;border-radius:999px;background:linear-gradient(180deg,oklch(0.64 0.13 250),oklch(0.5 0.13 250));box-shadow:inset 0 1px 0 oklch(1 0 0 / .35),inset 0 -3px 0 oklch(0 0 0 / .28),0 8px 16px -6px oklch(0 0 0 / .7);text-shadow:0 1px 0 oklch(0 0 0 / .25);color:oklch(0.99 0 0);font:inherit;font-size:16px;font-weight:600;white-space:nowrap;cursor:pointer;opacity:{{ printOpacity }}">{{ printLabel }}</button>
         </div>
-        <div class="coaster-panel-nav">
-          <button class="button button-ghost button-icon" type="button" id="coaster-prev" aria-label="Previous stop">←</button>
-          <button class="button button-primary button-icon" type="button" id="coaster-next" aria-label="Next stop">→</button>
+        <div data-reveal style="display:flex;flex-direction:column">
+          <div style="position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px;padding:0 20px;border-radius:18px 18px 12px 12px;background:linear-gradient(180deg,oklch(0.33 0.03 265),oklch(0.25 0.03 265));border:1px solid oklch(0.42 0.03 265);box-shadow:inset 0 1px 0 oklch(1 0 0 / .18),inset 0 -4px 0 oklch(0 0 0 / .3),0 14px 26px -12px oklch(0 0 0 / .8)">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:oklch(0.82 0.03 265);white-space:nowrap">Bubu-o-Matic 3000</span>
+            <span style="display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:oklch(0.75 0.03 265);white-space:nowrap">{{ printerStatus }}<span data-led style="width:10px;height:10px;border-radius:50%;background:{{ ledColor }};box-shadow:0 0 10px {{ ledColor }}"></span></span>
+          </div>
+          <div style="position:relative;z-index:2;height:10px;margin:0 18px;border-radius:0 0 8px 8px;background:oklch(0.08 0.02 265)"></div>
+          <div style="position:relative;margin:-4px 30px 0;min-height:260px;overflow:hidden">
+            <sc-if value="{{ noStub }}" hint-placeholder-val="{{ true }}">
+              <div style="height:260px;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:14px;color:oklch(0.68 0.03 265);text-align:center;border:2px dashed oklch(0.34 0.03 265);border-top:0;border-radius:0 0 16px 16px">Your stub prints here.</div>
+            </sc-if>
+            <sc-if value="{{ hasStub }}" hint-placeholder-val="{{ false }}">
+              <div style="position:relative"><div data-paperwrap>
+              <div data-paper style="position:relative;display:flex;flex-direction:column;gap:10px;padding:28px 24px 88px;background:oklch(0.97 0.012 80);color:oklch(0.2 0.03 265);clip-path:polygon(0 0,100% 0,100.00% 100%,95.83% calc(100% - 10px),91.67% 100%,87.50% calc(100% - 10px),83.33% 100%,79.17% calc(100% - 10px),75.00% 100%,70.83% calc(100% - 10px),66.67% 100%,62.50% calc(100% - 10px),58.33% 100%,54.17% calc(100% - 10px),50.00% 100%,45.83% calc(100% - 10px),41.67% 100%,37.50% calc(100% - 10px),33.33% 100%,29.17% calc(100% - 10px),25.00% 100%,20.83% calc(100% - 10px),16.67% 100%,12.50% calc(100% - 10px),8.33% 100%,4.17% calc(100% - 10px),0.00% 100%);box-shadow:inset 0 12px 12px -10px oklch(0 0 0 / .35)">
+                <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:oklch(0.45 0.03 265)">Claim stub · {{ stub.code }}</span>
+                <span style="font-family:'Instrument Serif',Georgia,serif;font-size:32px;line-height:1.1;text-wrap:balance">{{ stub.prize }}</span>
+                <span style="display:block;border-top:1px dashed oklch(0.72 0.02 80)"></span>
+                <span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:oklch(0.35 0.03 265)">When: {{ stub.when }}</span>
+                <span style="font-size:15px;line-height:1.5;color:oklch(0.38 0.03 265);text-wrap:pretty">Issued to Lala by Bubu. Present this to Bubu. No refunds, kisses only.</span>
+                <span data-stamp style="position:absolute;right:22px;bottom:30px;padding:6px 14px;border:3px solid oklch(0.55 0.19 18);border-radius:8px;color:oklch(0.55 0.19 18);font-family:'JetBrains Mono',monospace;font-weight:600;font-size:16px;letter-spacing:.14em;text-transform:uppercase;opacity:.92;white-space:nowrap;box-shadow:inset 0 0 0 1px oklch(0.55 0.19 18 / .4)">Claimed ♥</span>
+              </div>
+              </div><span data-printhead aria-hidden="true" style="position:absolute;left:-8px;right:-8px;top:0;height:4px;border-radius:2px;background:oklch(0.88 0.1 18);box-shadow:0 0 14px 3px oklch(0.72 0.17 18 / .8);opacity:0;pointer-events:none"></span></div>
+            </sc-if>
+          </div>
         </div>
       </div>
-      <p class="coaster-finale" id="coaster-finale" hidden><span>Still here.</span><span>Still us.</span><span>Still choosing you.</span></p>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ================= 04 · family-grid ================= -->
-<section class="page-section" id="family" aria-labelledby="family-title" data-layer="family-section">
-  <div class="page-container">
-    <div class="section-heading reveal">
-      <p class="section-heading-eyebrow">Chapter two · household</p>
-      <h2 class="section-heading-title" id="family-title">The little family we <em>accidentally</em> built</h2>
-    </div>
-    <ul class="family-grid">
-      <li class="family-card reveal"><div class="family-card-head"><span class="family-card-avatar" aria-hidden="true">🍫</span><span class="tag">Stuffed · 1 of 4</span></div><h3 class="family-card-name">Chicolat</h3><p class="family-card-role">Professional little baby.</p></li>
-      <li class="family-card reveal"><div class="family-card-head"><span class="family-card-avatar" aria-hidden="true">⭐</span><span class="tag">Stuffed · 2 of 4</span></div><h3 class="family-card-name">Patrick</h3><p class="family-card-role">Probably has witnessed more of our arguments than anyone.</p></li>
-      <li class="family-card reveal"><div class="family-card-head"><span class="family-card-avatar" aria-hidden="true">🐻</span><span class="tag">Stuffed · 3 of 4</span></div><h3 class="family-card-name">Jiso</h3><p class="family-card-role">Certified member of the chaos committee.</p></li>
-      <li class="family-card reveal"><div class="family-card-head"><span class="family-card-avatar" aria-hidden="true">🌙</span><span class="tag">Stuffed · 4 of 4</span></div><h3 class="family-card-name">Ora</h3><p class="family-card-role">Small but emotionally important.</p></li>
-      <li class="family-card family-card-real reveal"><div class="family-card-head"><span class="family-card-avatar" aria-hidden="true">🐶</span><span class="tag tag-red">Real dog · innocent</span></div><h3 class="family-card-name">Chuckie</h3><p class="family-card-role">The only one who is actually innocent here.</p></li>
-    </ul>
-    <div class="family-parents glass-card reveal">
-      <p class="family-parents-intro">And then there's us…</p>
-      <p class="family-parents-names"><span class="is-blue">Bubu</span> + <span class="is-red"><em>Dudu</em></span></p>
-      <p class="family-parents-text">Somehow we became parents before we even figured out how to properly behave ourselves.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ================= 05 · love-card ================= -->
-<section class="page-section" id="love" aria-labelledby="love-title" data-layer="love-cards">
-  <div class="page-container">
-    <div class="section-heading reveal">
-      <p class="section-heading-eyebrow">Chapter three</p>
-      <h2 class="section-heading-title" id="love-title">The things I love <em>about you</em></h2>
-      <p class="section-heading-lede">Eight cards. Flip them all. Yes, all of them — I wrote every one.</p>
-    </div>
-    <ul class="love-grid" id="love-grid"></ul>
-    <p class="love-progress" id="love-progress" aria-live="polite">0 of 8 opened</p>
-  </div>
-</section>
-
-<!-- ================= 06 · tease-panel ================= -->
-<section class="page-section tease-section" id="tease" aria-labelledby="tease-title" data-layer="tease-section">
-  <div class="page-container">
-    <div class="section-heading reveal">
-      <p class="section-heading-eyebrow">Chapter four · slightly less PG</p>
-      <h2 class="section-heading-title" id="tease-title">Okay… let's talk about the <em>other</em> kind of love 😏</h2>
-    </div>
-    <ul class="tease-list">
-      <li class="tease-item reveal"><p class="tease-item-setup">You're cute.</p><p class="tease-item-punch">But you're also dangerously kissable.</p></li>
-      <li class="tease-item reveal"><p class="tease-item-setup">I love your hugs.</p><p class="tease-item-punch">I also have… several other favorite ways of getting close to you. 😏</p></li>
-      <li class="tease-item reveal"><p class="tease-item-setup">Honestly?</p><p class="tease-item-punch">You're my favorite distraction.</p></li>
-      <li class="tease-item reveal"><p class="tease-item-setup">A talent of yours:</p><p class="tease-item-punch">Making me blush and lose my train of thought at the same time.</p></li>
-    </ul>
-    <div class="tease-actions">
-      <div class="tease-reveal reveal" id="behave-box">
-        <button class="button button-red" type="button" id="behave-button" aria-expanded="false" aria-controls="behave-answer">Should I behave?</button>
-        <p class="tease-reveal-answer" id="behave-answer" hidden>Absolutely not. It's our anniversary. 😏❤️</p>
+    <section aria-label="Date night draw" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(32px,5vw,56px);align-items:center;padding:clamp(28px,5vw,64px);border-radius:24px;background:oklch(0.22 0.035 265)">
+      <div data-reveal-group style="display:flex;flex-direction:column;gap:14px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:oklch(0.82 0.09 250)">The Monthly Draw</div>
+        <h2 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(34px,5vw,54px);line-height:1.05;text-shadow:0 3px 0 oklch(0.1 0.03 265),0 -1px 0 oklch(1 0 0 / .1);text-wrap:balance">Hindi na tayo mag-aaway kung saan kakain.</h2>
+        <p style="margin:0;font-size:17px;line-height:1.55;color:oklch(0.85 0.02 265);text-wrap:pretty">The drum decides our next date. Whatever lands, we do it this month. Bawal mag-reroll more than twice, Dudu.</p>
       </div>
-      <div class="tease-reveal reveal" id="secret-box">
-        <button class="button button-blue" type="button" id="secret-button" aria-expanded="false" aria-controls="secret-answer">One more secret <span class="button-arrow" aria-hidden="true">→</span></button>
-        <p class="tease-reveal-answer" id="secret-answer" hidden>You're still my favorite person to annoy, kiss, cuddle, tease, and come home to.</p>
+      <div style="display:flex;flex-direction:column;gap:16px;align-items:stretch">
+        <div data-reveal data-drawcard aria-live="polite" style="box-shadow:inset 0 2px 0 oklch(1 0 0 / .9),inset 0 -4px 0 oklch(0.84 0.02 80),0 2px 0 oklch(0.7 0.02 80),0 22px 40px -18px oklch(0 0 0 / .75);min-height:150px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;padding:24px;border-radius:20px;background:oklch(0.97 0.012 80);color:oklch(0.2 0.03 265);text-align:center">
+          <span data-drum aria-hidden="true" style="width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;color:oklch(0.98 0 0);background:radial-gradient(circle at 35% 30%,oklch(0.86 0.09 18),oklch(0.62 0.17 18) 58%,oklch(0.42 0.14 18));box-shadow:inset 0 2px 3px oklch(1 0 0 / .5),inset 0 -5px 8px oklch(0 0 0 / .35),0 8px 14px -5px oklch(0 0 0 / .45);text-shadow:0 1px 1px oklch(0 0 0 / .35)">♥</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:oklch(0.45 0.03 265)">{{ drawLabel }}</span>
+          <span data-drawtext style="display:block;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(26px,3.4vw,34px);line-height:1.15;text-wrap:balance">{{ drawText }}</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+          <button onClick="{{ draw }}" disabled="{{ drawDisabled }}" style="min-height:48px;padding:0 24px;border:0;border-radius:999px;background:linear-gradient(180deg,oklch(0.74 0.15 18),oklch(0.6 0.17 18));box-shadow:inset 0 1px 0 oklch(1 0 0 / .35),inset 0 -3px 0 oklch(0 0 0 / .28),0 8px 16px -6px oklch(0 0 0 / .7);text-shadow:0 1px 0 oklch(0 0 0 / .25);color:oklch(0.99 0 0);font:inherit;font-size:16px;font-weight:600;cursor:pointer;white-space:nowrap;opacity:{{ drawOpacity }}">{{ drawBtn }}</button>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:oklch(0.78 0.03 265)">{{ rerollNote }}</span>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ================= 07 · badge-grid ================= -->
-<section class="page-section" id="survived" aria-labelledby="survived-title" data-layer="badge-section">
-  <div class="page-container">
-    <div class="section-heading reveal">
-      <p class="section-heading-eyebrow">Chapter five · achievements</p>
-      <h2 class="section-heading-title" id="survived-title">Things we <em>survived</em></h2>
-      <p class="section-heading-lede">Claim each one. We earned them. Some of them twice.</p>
-    </div>
-    <div class="badge-toolbar">
-      <p class="badge-counter" id="badge-counter" aria-live="polite">0 / 8 claimed</p>
-      <button class="button button-ghost button-small" type="button" id="badge-claim-all">Claim all at once</button>
-    </div>
-    <ul class="badge-grid" id="badge-grid"></ul>
-    <div class="badge-final reveal" id="badge-final">
-      <span class="badge-final-medal" aria-hidden="true">🏆</span>
-      <p class="badge-final-title">Still In Love</p>
-      <p class="badge-final-status" id="badge-final-status">Locked · claim the 8 above to unlock</p>
-    </div>
-  </div>
-</section>
+    <section aria-label="Bubu hotline" style="display:flex;flex-direction:column;gap:36px">
+      <div data-reveal-group style="display:flex;flex-direction:column;gap:12px;max-width:46rem">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:oklch(0.82 0.1 18)">Bubu Hotline · Open 24/7</div>
+        <h2 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(34px,5vw,54px);line-height:1.05;text-shadow:0 3px 0 oklch(0.1 0.03 265),0 -1px 0 oklch(1 0 0 / .1);text-wrap:balance">Ano nararamdaman mo ngayon?</h2>
+        <p style="margin:0;font-size:17px;line-height:1.55;color:oklch(0.85 0.02 265)">Pick your mood. May naka-ready na akong sagot para sa'yo, kahit wala ako sa tabi mo.</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px">
+        <sc-for list="{{ moods }}" as="m" hint-placeholder-count="6">
+          <button onClick="{{ m.onPick }}" aria-pressed="{{ m.on }}" style="min-height:48px;padding:0 20px;border-radius:999px;border:1px solid {{ m.border }};background:{{ m.bg }};color:oklch(0.97 0.01 265);font:inherit;font-size:16px;white-space:nowrap;flex:none;cursor:pointer;box-shadow:inset 0 1px 0 oklch(1 0 0 / .12),0 4px 0 oklch(0.12 0.03 265),0 8px 14px -6px oklch(0 0 0 / .6);transition:transform .2s,background .2s" style-hover="transform:translateY(-3px)">{{ m.label }}</button>
+        </sc-for>
+      </div>
+      <div data-reveal data-moodcard aria-live="polite" style="box-shadow:inset 0 2px 0 oklch(1 0 0 / .9),inset 0 -4px 0 oklch(0.84 0.02 80),0 2px 0 oklch(0.7 0.02 80),0 22px 40px -18px oklch(0 0 0 / .75);min-height:160px;display:flex;flex-direction:column;justify-content:center;gap:12px;padding:clamp(24px,4vw,40px);border-radius:20px;background:oklch(0.97 0.012 80);color:oklch(0.2 0.03 265)">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:oklch(0.45 0.03 265)">{{ moodHead }}</span>
+        <span style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(24px,3.2vw,34px);line-height:1.25;max-width:42rem;text-wrap:pretty" data-moodmsg>{{ moodMsg }}</span>
+      </div>
+    </section>
 
-<!-- ================= 08 · stats-grid ================= -->
-<section class="page-section" id="stats" aria-labelledby="stats-title" data-layer="stats-section">
-  <div class="page-container">
-    <div class="section-heading reveal">
-      <p class="section-heading-eyebrow">Chapter six · dashboard</p>
-      <h2 class="section-heading-title" id="stats-title">Our love <em>stats</em></h2>
-      <p class="section-heading-lede">Data collected carefully over 21 months. Methodology: vibes.</p>
-    </div>
-    <ul class="stats-grid" id="stats-grid">
-      <li class="stat-tile stat-tile-blue reveal"><span class="stat-tile-value" data-count="1">1</span><span class="stat-tile-label">Year</span></li>
-      <li class="stat-tile stat-tile-red reveal"><span class="stat-tile-value" data-count="9">9</span><span class="stat-tile-label">Months</span></li>
-      <li class="stat-tile reveal"><span class="stat-tile-value">∞</span><span class="stat-tile-label">Memories</span></li>
-      <li class="stat-tile reveal"><span class="stat-tile-value">∞</span><span class="stat-tile-label">Kisses</span></li>
-      <li class="stat-tile reveal"><span class="stat-tile-value">∞</span><span class="stat-tile-label">Cuddles</span></li>
-      <li class="stat-tile stat-tile-red reveal"><span class="stat-tile-value stat-tile-value-text">Too many</span><span class="stat-tile-label">Arguments</span></li>
-      <li class="stat-tile stat-tile-blue reveal"><span class="stat-tile-value stat-tile-value-text">Even more</span><span class="stat-tile-label">Make-ups</span></li>
-      <li class="stat-tile reveal"><span class="stat-tile-value" data-count="1">1</span><span class="stat-tile-label">Real dog (Chuckie)</span></li>
-      <li class="stat-tile reveal"><span class="stat-tile-value" data-count="4">4</span><span class="stat-tile-label">Stuffed children</span></li>
-      <li class="stat-tile stat-tile-red reveal"><span class="stat-tile-value" data-count="2">2</span><span class="stat-tile-label">Idiots in love</span></li>
-    </ul>
-    <div class="easter-egg">
-      <button class="easter-egg-button" type="button" id="easter-egg-button" aria-haspopup="dialog">Don't click this.</button>
-    </div>
-  </div>
-</section>
-
-<!-- ================= 09 · release-card ================= -->
-<section class="page-section" id="release" aria-labelledby="release-title" data-layer="release-section">
-  <div class="page-container">
-    <div class="section-heading reveal">
-      <p class="section-heading-eyebrow">Chapter seven · for the developer</p>
-      <h2 class="section-heading-title">If our love were a <em>software project</em></h2>
-    </div>
-    <article class="release-card reveal" aria-labelledby="release-title">
-      <div class="release-card-bar" aria-hidden="true"><span class="release-card-dot"></span><span class="release-card-dot"></span><span class="release-card-dot"></span><span class="release-card-file">CHANGELOG.md — us/</span></div>
-      <div class="release-card-body">
-        <div>
-          <h3 class="release-card-title" id="release-title">Our relationship: v1.9.0</h3>
-          <dl class="release-meta">
-            <dt>Status</dt><dd><span class="release-status">PRODUCTION</span></dd>
-            <dt>System</dt><dd>Bubu + Dudu</dd>
-            <dt>Uptime</dt><dd>1y 9m (with some incidents)</dd>
-            <dt>Dependencies</dt><dd>chicolat, patrick, jiso, ora, chuckie</dd>
-          </dl>
-          <div class="release-block" style="margin-top:var(--space-3)">
-            <p class="release-block-label">Known issues</p>
-            <ul class="release-list release-list-issue">
-              <li>Both stubborn</li><li>Occasional emotional bugs</li><li>Random overthinking</li><li>Excessive clinginess</li><li>Cannot stop annoying each other</li>
+    <section aria-label="Wishing well" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(32px,5vw,56px);align-items:start;padding:clamp(28px,5vw,64px);border-radius:24px;background:oklch(0.22 0.035 265)">
+      <div data-reveal-group style="display:flex;flex-direction:column;gap:14px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:oklch(0.82 0.09 250)">Wishing Well</div>
+        <h2 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(34px,5vw,54px);line-height:1.05;text-shadow:0 3px 0 oklch(0.1 0.03 265),0 -1px 0 oklch(1 0 0 / .1);text-wrap:balance">Your turn. Ano wish mo for month 23?</h2>
+        <p style="margin:0;font-size:17px;line-height:1.55;color:oklch(0.85 0.02 265)">Write it, drop a coin. I'll read every one, and I'll try to make it come true.</p>
+        <p style="align-self:flex-start;margin:4px 0 0;padding:14px 18px;border-radius:12px;background:linear-gradient(180deg,oklch(0.96 0.02 85),oklch(0.9 0.03 80));color:oklch(0.25 0.03 265);font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:21px;line-height:1.35;box-shadow:inset 0 1px 0 oklch(1 0 0 / .85),inset 0 -3px 0 oklch(0.8 0.04 75),0 10px 18px -8px oklch(0 0 0 / .7);text-wrap:pretty">Babawi si Lulu soon ha, promise po yan. <span style="color:oklch(0.58 0.17 18)">♥</span></p>
+      </div>
+      <div data-reveal-group style="display:flex;flex-direction:column;gap:12px">
+        <label for="wish" style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:oklch(0.72 0.03 265)">Wish ni Lala</label>
+        <textarea id="wish" value="{{ wishDraft }}" onChange="{{ onWish }}" rows="3" placeholder="Sana ngayong month…" style="font:inherit;font-size:17px;line-height:1.5;padding:14px 16px;border-radius:14px;border:1px solid oklch(0.4 0.03 265);background:oklch(0.17 0.03 265);color:oklch(0.96 0.01 265);resize:vertical"></textarea>
+        <button data-coinbtn onClick="{{ dropCoin }}" disabled="{{ cantWish }}" style="align-self:flex-start;min-height:48px;padding:0 24px;border:0;border-radius:999px;background:linear-gradient(180deg,oklch(0.74 0.15 18),oklch(0.6 0.17 18));box-shadow:inset 0 1px 0 oklch(1 0 0 / .35),inset 0 -3px 0 oklch(0 0 0 / .28),0 8px 16px -6px oklch(0 0 0 / .7);text-shadow:0 1px 0 oklch(0 0 0 / .25);color:oklch(0.99 0 0);font:inherit;font-size:16px;font-weight:600;white-space:nowrap;cursor:pointer;opacity:{{ wishOpacity }}">Drop a coin</button>
+        <div style="position:relative;width:100%;max-width:440px;margin:20px auto 0;filter:drop-shadow(0 18px 18px oklch(0 0 0 / .55))">
+        <div aria-hidden="true" style="position:relative;height:212px;z-index:2">
+          <div style="position:absolute;top:0;left:6px;right:6px;height:62px;clip-path:polygon(14% 0,86% 0,100% 100%,0 100%);background:repeating-linear-gradient(90deg,oklch(0 0 0 / .18) 0 2px,transparent 2px 22px),repeating-linear-gradient(180deg,oklch(0 0 0 / .22) 0 2px,transparent 2px 15px),linear-gradient(180deg,oklch(0.6 0.15 18),oklch(0.44 0.14 18))"></div>
+          <div style="position:absolute;top:58px;left:0;right:0;height:10px;border-radius:5px;background:linear-gradient(180deg,oklch(0.62 0.08 60),oklch(0.42 0.07 55));box-shadow:inset 0 1px 0 oklch(1 0 0 / .3)"></div>
+          <div style="position:absolute;top:66px;left:44px;width:18px;height:120px;background:linear-gradient(90deg,oklch(0.36 0.06 55),oklch(0.6 0.08 60) 45%,oklch(0.34 0.06 55));box-shadow:inset 0 -6px 6px oklch(0 0 0 / .3)"></div>
+          <div style="position:absolute;top:66px;right:44px;width:18px;height:120px;background:linear-gradient(90deg,oklch(0.36 0.06 55),oklch(0.6 0.08 60) 45%,oklch(0.34 0.06 55));box-shadow:inset 0 -6px 6px oklch(0 0 0 / .3)"></div>
+          <div style="position:absolute;top:92px;left:40px;right:40px;height:12px;border-radius:6px;background:linear-gradient(180deg,oklch(0.66 0.08 60),oklch(0.4 0.06 55));box-shadow:inset 0 1px 0 oklch(1 0 0 / .35),0 2px 3px oklch(0 0 0 / .35)"></div>
+          <div style="position:absolute;top:100px;left:50%;width:4px;height:40px;margin-left:-2px;background:repeating-linear-gradient(180deg,oklch(0.78 0.06 80) 0 3px,oklch(0.6 0.06 75) 3px 6px)"></div>
+          <div style="position:absolute;top:138px;left:50%;width:40px;height:32px;margin-left:-20px;clip-path:polygon(0 0,100% 0,88% 100%,12% 100%);background:repeating-linear-gradient(90deg,oklch(0 0 0 / .2) 0 2px,transparent 2px 10px),linear-gradient(180deg,oklch(0.58 0.08 60),oklch(0.4 0.06 55));box-shadow:inset 0 3px 0 oklch(0.3 0.02 265)"></div>
+          <div style="position:absolute;top:168px;left:6px;right:6px;height:52px;border-radius:50%;background:linear-gradient(180deg,oklch(0.78 0.015 265),oklch(0.5 0.02 265));box-shadow:inset 0 2px 0 oklch(1 0 0 / .35),inset 0 -3px 0 oklch(0 0 0 / .3),0 3px 4px oklch(0 0 0 / .4)"></div>
+          <div data-well style="position:absolute;top:177px;left:22px;right:22px;height:32px;border-radius:50%;overflow:hidden;background:radial-gradient(ellipse at 50% 70%,oklch(0.42 0.09 240) 0%,oklch(0.22 0.07 250) 45%,oklch(0.08 0.03 265) 100%);box-shadow:inset 0 6px 10px oklch(0 0 0 / .8)"></div>
+        </div>
+          <div style="position:relative;z-index:1;margin:-20px 18px 0;padding:36px 18px 22px;border-radius:0 0 24px 24px;background:repeating-linear-gradient(180deg,transparent 0 30px,oklch(0.25 0.02 265 / .7) 30px 33px),repeating-linear-gradient(90deg,transparent 0 52px,oklch(0.25 0.02 265 / .55) 52px 55px),linear-gradient(90deg,oklch(0.4 0.02 265),oklch(0.66 0.02 265) 45%,oklch(0.62 0.02 265) 60%,oklch(0.36 0.02 265));box-shadow:inset 0 -10px 14px oklch(0 0 0 / .4),inset 0 6px 8px oklch(0 0 0 / .35)">
+            <div style="display:flex;justify-content:center;margin-bottom:12px"><span style="padding:4px 14px;border-radius:6px;background:linear-gradient(180deg,oklch(0.55 0.02 265),oklch(0.45 0.02 265));box-shadow:inset 0 1px 0 oklch(1 0 0 / .25),inset 0 -2px 0 oklch(0 0 0 / .3);font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:oklch(0.9 0.01 265);text-shadow:0 -1px 0 oklch(0 0 0 / .5);white-space:nowrap">Wishes ni Lala</span></div>
+            <ul data-wishlist style="margin:0;padding:12px;list-style:none;display:flex;flex-direction:column;gap:10px;max-height:300px;overflow-y:auto;border-radius:16px;background:linear-gradient(180deg,oklch(0.14 0.03 255),oklch(0.2 0.05 245));box-shadow:inset 0 6px 14px oklch(0 0 0 / .75),inset 0 -2px 0 oklch(1 0 0 / .08),0 1px 0 oklch(1 0 0 / .2)">
+              <sc-if value="{{ noWishes }}" hint-placeholder-val="{{ true }}"><li style="padding:18px 8px;text-align:center;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:18px;color:oklch(0.75 0.04 245)">Wala pang wish dito. Drop a coin.</li></sc-if>
+              <sc-for list="{{ wishes }}" as="w" hint-placeholder-count="0">
+                <li style="display:flex;gap:12px;align-items:center;padding:12px 14px;border-radius:12px;background:linear-gradient(180deg,oklch(0.96 0.02 85),oklch(0.9 0.03 80));color:oklch(0.25 0.03 265);font-size:15px;line-height:1.5;box-shadow:inset 0 1px 0 oklch(1 0 0 / .85),inset 0 -3px 0 oklch(0.8 0.04 75),0 6px 12px -6px oklch(0 0 0 / .8)"><span style="flex:none;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;color:oklch(0.45 0.09 70);background:radial-gradient(circle at 35% 30%,oklch(0.96 0.07 92),oklch(0.8 0.13 82) 55%,oklch(0.58 0.11 70));box-shadow:inset 0 1px 1px oklch(1 0 0 / .7),inset 0 -2px 3px oklch(0.45 0.09 70 / .6),0 2px 4px oklch(0 0 0 / .35);text-shadow:0 1px 0 oklch(1 0 0 / .55)">♥</span><span style="min-width:0;text-wrap:pretty;overflow-wrap:anywhere">{{ w.t }}</span></li>
+              </sc-for>
             </ul>
           </div>
         </div>
-        <div>
-          <div class="release-block">
-            <p class="release-block-label">Latest patch</p>
-            <p>v1.9.0 — Still choosing each other.</p>
-          </div>
-          <div class="release-block">
-            <p class="release-block-label">Patch notes</p>
-            <ul class="release-list release-list-patch">
-              <li>More memories</li><li>More cuddles</li><li>More laughter</li><li>More adventures</li><li>Improved communication</li><li>Increased love</li><li>Fixed absolutely nothing about our stubbornness</li>
-            </ul>
-          </div>
-          <div class="release-terminal">
-            <p class="release-terminal-prompt">$ try it yourself:</p>
-            <button class="button button-ghost button-small" type="button" id="uninstall-button" style="font-family:var(--font-mono);align-self:flex-start">npm uninstall us</button>
-            <p class="release-terminal-output" id="uninstall-output" aria-live="polite"></p>
-          </div>
+      </div>
+    </section>
+
+    <section aria-label="Fine print" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:clamp(40px,6vw,72px);align-items:start">
+      <div style="display:flex;flex-direction:column;gap:36px;min-width:0">
+      <div data-reveal-group style="display:flex;flex-direction:column;gap:12px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:oklch(0.82 0.1 18)">Terms &amp; Conditions</div>
+        <h2 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(34px,5vw,54px);line-height:1.05;text-shadow:0 3px 0 oklch(0.1 0.03 265),0 -1px 0 oklch(1 0 0 / .1)">The fine print. Basahin mo, ha.</h2>
+      </div>
+      <ol style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:0;border-top:1px solid oklch(0.32 0.03 265)">
+        <sc-for list="{{ terms }}" as="term" hint-placeholder-count="5">
+          <li data-reveal style="display:grid;grid-template-columns:48px minmax(0,1fr);gap:16px;padding:18px 0;border-bottom:1px solid oklch(0.32 0.03 265);transition:transform .25s" style-hover="transform:translateX(8px)">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:oklch(0.72 0.03 265);padding-top:3px">§{{ term.n }}</span>
+            <span style="font-size:17px;line-height:1.55;color:oklch(0.9 0.015 265);text-wrap:pretty">{{ term.t }}</span>
+          </li>
+        </sc-for>
+      </ol>
+      </div>
+      <aside data-reveal aria-label="Kulit moments" style="position:sticky;top:32px;display:flex;flex-direction:column;align-items:center;gap:18px">
+        <div style="display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:oklch(0.82 0.03 265)"><span data-rec style="width:10px;height:10px;border-radius:50%;background:oklch(0.65 0.22 25);box-shadow:0 0 10px oklch(0.65 0.22 25)"></span><span style="white-space:nowrap">Kulit Cam · Live</span></div>
+        <div data-kbob style="width:100%;max-width:360px;margin-top:22px">
+          <button data-kcard onClick="{{ nextKulit }}" aria-label="Next kulit moment" style="position:relative;display:block;width:100%;padding:12px;border:0;border-radius:28px;background:oklch(1 0 0);cursor:pointer;box-shadow:0 1px 0 oklch(0.9 0.01 80),0 4px 0 oklch(0.82 0.015 80),0 26px 40px -16px oklch(0 0 0 / .8)">
+            <span data-kimg role="img" aria-label="{{ kulit.cap }}" style="display:block;aspect-ratio:1/1;border-radius:18px;background-image:url('{{ kulit.src }}');background-size:{{ kulit.size }};background-position:{{ kulit.pos }};background-repeat:no-repeat;box-shadow:inset 0 0 0 1px oklch(0 0 0 / .06)"></span>
+            <span data-kbubble style="position:absolute;top:-22px;right:-8px;max-width:72%;padding:12px 16px;border-radius:18px;background:oklch(0.68 0.16 18);color:oklch(0.99 0 0);font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:600;font-size:16px;line-height:1.3;text-align:left;box-shadow:inset 0 1px 0 oklch(1 0 0 / .35),inset 0 -3px 0 oklch(0 0 0 / .22),0 10px 18px -8px oklch(0 0 0 / .7);text-shadow:0 1px 0 oklch(0 0 0 / .25)">{{ kulit.say }}<span aria-hidden="true" style="position:absolute;left:22px;bottom:-10px;width:18px;height:12px;background:oklch(0.6 0.17 18);clip-path:polygon(0 0,100% 0,15% 100%)"></span></span>
+          </button>
         </div>
-        <p class="release-warning" role="note">Warning: This relationship has no uninstall option.</p>
-      </div>
-    </article>
-  </div>
-</section>
+        <span data-kcap style="display:block;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:24px;line-height:1.2;text-align:center;color:oklch(0.92 0.015 265);text-wrap:balance">{{ kulit.cap }}</span>
+        <div style="display:flex;gap:8px;margin-top:10px">
+          <sc-for list="{{ kulitDots }}" as="d" hint-placeholder-count="6">
+            <span style="width:{{ d.w }};height:8px;border-radius:4px;background:{{ d.bg }};transition:width .3s,background .3s"></span>
+          </sc-for>
+        </div>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:oklch(0.7 0.03 265)">Tap the sticker para sa next kulit</span>
+      </aside>
+    </section>
 
-<!-- ================= photo-wall ================= -->
-<section class="page-section" id="photos" aria-labelledby="photos-title" data-layer="photo-wall">
-  <div class="page-container">
-    <div class="section-heading reveal">
-      <p class="section-heading-eyebrow">Chapter eight · evidence</p>
-      <h2 class="section-heading-title" id="photos-title">Proof that <em>we happened</em></h2>
-    </div>
-    <!--
-      HOW TO ADD PHOTOS: put files in /assets and set data-src on each .photo-slot.
-      Naming: img_gallery_01.jpg … img_gallery_06.jpg (≈1200px long edge, JPG/WebP, < 250KB).
-      States handled automatically: empty (no data-src) · loading · loaded · error (bad path).
-    -->
-    <ul class="photo-wall">
-      <!-- img_gallery_01.jpg — First room number we shared -->
-      <li class="photo-slot reveal" data-src="assets/img_gallery_01.jpg"><div class="photo-slot-media"><div class="photo-slot-placeholder"><strong>img_gallery_01.jpg</strong><span>room 2651 door sign</span></div></div><p class="photo-slot-caption">First room number we shared</p></li>
-      <!-- img_gallery_02.jpg — First perfume gift you had given to me -->
-      <li class="photo-slot reveal" data-src="assets/img_gallery_02.jpg"><div class="photo-slot-media"><div class="photo-slot-placeholder"><strong>img_gallery_02.jpg</strong><span>Blue Waves eau de parfum box</span></div></div><p class="photo-slot-caption">First perfume gift you had given to me</p></li>
-      <!-- img_gallery_03.jpg — First movie we've watched together -->
-      <li class="photo-slot reveal" data-src="assets/img_gallery_03.jpg"><div class="photo-slot-media"><div class="photo-slot-placeholder"><strong>img_gallery_03.jpg</strong><span>cinema screen, Call Me Mother</span></div></div><p class="photo-slot-caption">First movie we've watched together</p></li>
-      <!-- img_gallery_04.jpg — First meal I had cooked for you -->
-      <li class="photo-slot reveal" data-src="assets/img_gallery_04.jpg"><div class="photo-slot-media"><div class="photo-slot-placeholder"><strong>img_gallery_04.jpg</strong><span>pasta dinner with music on the TV</span></div></div><p class="photo-slot-caption">First meal I had cooked for you</p></li>
-      <!-- img_gallery_05.jpg — First Airbnb we met -->
-      <li class="photo-slot reveal" data-src="assets/img_gallery_05.jpg"><div class="photo-slot-media"><div class="photo-slot-placeholder"><strong>img_gallery_05.jpg</strong><span>Coast Residences entrance</span></div></div><p class="photo-slot-caption">First Airbnb we met</p></li>
-      <!-- img_gallery_06.jpg — First buffet we enjoyed -->
-      <li class="photo-slot reveal" data-src="assets/img_gallery_06.jpg"><div class="photo-slot-media"><div class="photo-slot-placeholder"><strong>img_gallery_06.jpg</strong><span>buffet dessert plate</span></div></div><p class="photo-slot-caption">First buffet we enjoyed</p></li>
-    </ul>
-    <p class="photo-wall-note">Six firsts. Many more coming.</p>
-  </div>
-</section>
+    <sc-if value="{{ allDone }}" hint-placeholder-val="{{ false }}">
+      <section data-reveal-group data-jackpot style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px;padding:48px 24px;border-radius:24px;border:1px solid oklch(0.68 0.16 18)">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:oklch(0.82 0.1 18)">Jackpot unlocked</div>
+        <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(32px,5vw,52px);line-height:1.1;max-width:40rem;text-wrap:balance">The real prize was me. <em style="color:oklch(0.82 0.09 250)">Charot.</em> It's you, always you.</p>
+        <p style="margin:0;font-size:18px;line-height:1.55;color:oklch(0.85 0.02 265);max-width:34rem">Happy 22nd monthsary, Lala. See you on ticket batch No. 23. Labababsss.</p>
+        <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:22px;color:oklch(0.85 0.02 265)">— Bubu</p>
+      </section>
+    </sc-if>
 
-<!-- ================= 10 · love-letter ================= -->
-<section class="page-section" id="letter" aria-labelledby="letter-title" data-layer="love-letter">
-  <div class="page-container page-container-narrow">
-    <h2 class="visually-hidden" id="letter-title">A letter for Dudu</h2>
-    <article class="love-letter reveal">
-      <span class="love-letter-stamp" aria-hidden="true">1Y·9M<br>B→D</span>
-      <p class="love-letter-greeting">Dear Dudu,</p>
-      <div class="love-letter-body">
-        <p>I started writing this about six times. Every version sounded like a greeting card and you would've laughed at me, so here's the real one.</p>
-        <p>These 1 year and 9 months haven't been perfect. We've had fights that went on way longer than they needed to, "I'm fine"s that were absolutely not fine, and nights where we were both too stubborn to be the first one to say sorry. If our relationship were a ride, it would have a sign at the entrance warning people with weak hearts.</p>
-        <p>But that ride also has the parts I'd queue for again and again. Laughing until we couldn't breathe. Your random messages in the middle of my day. The cuddles that somehow fix everything. The quiet moments where neither of us has to say anything at all.</p>
-        <p>And somewhere along the way, we built a whole little household. Chicolat, Patrick, Jiso and Ora, who have honestly seen far too much. And Chuckie, the only innocent one among us, who loves us both even on the days we're being ridiculous.</p>
-        <p>What I love most is that we're still here. Not because it's always easy — but because every time it gets hard, we keep choosing each other. I don't take that lightly. I know I'm not always easy to love, and you do it anyway.</p>
-        <p>I'm excited for whatever's next. New chapters, new places, probably new arguments, definitely more making up. As long as it's with you, I'm in.</p>
+    <footer aria-label="Next draw" style="display:flex;flex-direction:column;align-items:center;gap:18px;padding:32px 0 8px;border-top:1px solid oklch(0.32 0.03 265);text-align:center">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:oklch(0.78 0.03 265)">Next draw · Monthsary No. 23 · Nov 29</div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px">
+        <sc-for list="{{ countdown }}" as="c" hint-placeholder-count="4">
+          <div data-reveal style="min-width:84px;padding:14px 10px;border-radius:16px;background:linear-gradient(180deg,oklch(0.27 0.035 265),oklch(0.2 0.035 265));box-shadow:inset 0 1px 0 oklch(1 0 0 / .12),inset 0 -3px 0 oklch(0 0 0 / .3),0 10px 20px -10px oklch(0 0 0 / .8);text-shadow:0 2px 0 oklch(0.1 0.03 265);display:flex;flex-direction:column;gap:4px">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:32px;font-weight:600;font-variant-numeric:tabular-nums;display:block" data-cdv>{{ c.v }}</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:oklch(0.72 0.03 265)">{{ c.u }}</span>
+          </div>
+        </sc-for>
       </div>
-      <div class="love-letter-closing">
-        <p>Happy 1 year and 9 months, Dudu.</p>
-        <p class="love-letter-closing-quote">I'd choose you again.<br>Even knowing how chaotic you are.</p>
-        <p class="love-letter-sign">Love,<span>Your Bubu 💙</span></p>
-      </div>
-    </article>
+      <p style="margin:0;font-size:16px;color:oklch(0.8 0.02 265)">Bagong tickets, same Bubu. Iloveyousomuch, Lala.</p>
+    </footer>
   </div>
-</section>
-
-<!-- ================= 11 · final-question ================= -->
-<section class="final-question" id="final" aria-labelledby="final-title" data-layer="final-question">
-  <div class="page-container final-question-inner" id="final-ask">
-    <p class="final-question-eyebrow reveal">One last thing</p>
-    <h2 class="final-question-title reveal" id="final-title">So… Dudu…</h2>
-    <p class="final-question-lede reveal">After 1 year and 9 months…</p>
-    <p class="final-question-ask reveal">Are you still choosing me?</p>
-    <div class="final-question-actions reveal">
-      <button class="button button-ghost" type="button" data-answer="yes">YES ❤️</button>
-      <button class="button button-red button-large final-question-obvious" type="button" data-answer="obviously">Obviously, Bubu 🙄</button>
-    </div>
-    <p class="final-question-hint" id="final-hint" aria-live="polite"></p>
-  </div>
-  <div class="page-container final-answer" id="final-answer" hidden tabindex="-1">
-    <p class="final-answer-good"><span>GOO</span><span>D.</span></p>
-    <p class="final-answer-text">Because you're stuck with me.</p>
-    <p class="final-answer-wish">Happy 1 year and 9 months, Dudu. ❤️</p>
-    <button class="button button-ghost button-small" type="button" id="final-replay">Celebrate again</button>
-  </div>
-</section>
 </main>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  KEY = 'bubu-m22-scratch';
+  rootRef = React.createRef();
+  data = [
+    ['One (1) siopao butt squeeze', 'Walang reklamo, walang "aray." Redeemable anytime, anywhere (okay, within reason).'],
+    ['Dinner date, your pick', 'Ikaw pipili. Bawal "kahit saan" as an answer, wag na magpabebe. Ikaw din naman magbi-bill out eh.'],
+    ['Unlimited "Labababsss"', 'Sa chat, kahit busy ka. Kahit nasa meeting ka pa. Stay lang sa call, bawal makulit, bawal sumingit.'],
+    ['Movie night, your choice', 'Bawal ako matulog halfway. If I do, you get a bonus ticket.'],
+    ['One tampo pass', 'Next time we fight, ako unang magso-sorry. Kahit ikaw may kasalanan. Siguro.'],
+    ['Kisses on demand', 'Valid 24/7. No expiry. Non-transferable, obviously.']
+  ];
+  state = { wishes: (() => { try { return JSON.parse(localStorage.getItem('bubu-m22-wishes')) || []; } catch (e) { return []; } })(), wishDraft: '', revealed: (() => { try { return JSON.parse(localStorage.getItem(this.KEY)) || []; } catch (e) { return []; } })() };
 
-<footer class="site-footer" data-layer="site-footer">
-  <div class="page-container site-footer-inner">
-    <p>Made by Bubu, for Dudu. Hand-coded, over-thought, 100% sincere.</p>
-    <p class="site-footer-version">v1.2.0 · us@1.9.0</p>
-  </div>
-</footer>
+  reveal = (i) => { if (!this.state.revealed.includes(i)) requestAnimationFrame(() => this.popTicket(i)); this._rev(i); };
+  _rev = (i) => this.setState(s => {
+    if (s.revealed.includes(i)) return null;
+    const revealed = [...s.revealed, i];
+    try { localStorage.setItem(this.KEY, JSON.stringify(revealed)); } catch (e) {}
+    return { revealed };
+  });
 
-<!-- ================= 12 · notice-modal (easter egg) ================= -->
-<dialog class="notice-modal" id="easter-egg-modal" aria-labelledby="egg-title">
-  <div class="notice-modal-inner">
-    <p class="notice-modal-eyebrow">Since you clicked it anyway…</p>
-    <h2 class="notice-modal-title" id="egg-title">You owe Bubu:</h2>
-    <ul class="notice-modal-list">
-      <li><span>One long hug</span><span>×1</span></li>
-      <li><span>Kisses</span><span>×3</span></li>
-      <li><span>Cuddles</span><span>unlimited</span></li>
-    </ul>
-    <p class="notice-modal-terms">Terms and conditions are non-negotiable. 😏</p>
-    <div class="notice-modal-actions">
-      <button class="button button-red" type="button" data-close-modal>I accept the terms</button>
-      <button class="button button-ghost" type="button" data-close-modal>I have no choice, do I?</button>
-    </div>
-  </div>
-</dialog>
+  paint(c) {
+    const r = c.getBoundingClientRect(), d = window.devicePixelRatio || 1;
+    if (!r.width) return;
+    c.width = r.width * d; c.height = r.height * d;
+    const x = c.getContext('2d'); x.setTransform(d, 0, 0, d, 0, 0);
+    x.globalCompositeOperation = 'source-over';
+    const g = x.createLinearGradient(0, 0, r.width, r.height);
+    g.addColorStop(0, '#b9bfcc'); g.addColorStop(.5, '#e4e7ee'); g.addColorStop(1, '#a7aebd');
+    x.fillStyle = g; x.fillRect(0, 0, r.width, r.height);
+    x.fillStyle = 'rgba(40,48,70,.55)'; x.font = '600 13px "JetBrains Mono", monospace'; x.textAlign = 'center';
+    for (let y = 22; y < r.height; y += 34) if (Math.abs(y - r.height / 2) > 30) for (let k = 0; k < 4; k++) x.fillText(k % 2 ? '♥' : 'SCRATCH', ((k + (y / 34) % 2 * .5) % 4 + .5) * r.width / 4, y);
+    x.fillStyle = '#1f2638'; x.font = '400 28px "Instrument Serif", serif';
+    x.fillText('Kuskusin mo, Lala', r.width / 2, r.height / 2 + 8);
+  }
 
-<div class="celebration-layer" id="celebration-layer" aria-hidden="true" hidden><canvas id="celebration-canvas"></canvas></div>
-
-<script>
-(function(){
-  'use strict';
-  var root = document.documentElement;
-  root.classList.replace('no-js','js');
-  var $ = function(s,c){return (c||document).querySelector(s)};
-  var $$ = function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
-  var STORE = 'bubu-dudu-settings-v1';
-  var systemReduced = window.matchMedia('(prefers-reduced-motion: reduce)');
-  function reducedMotion(){return root.dataset.motion==='reduced'||systemReduced.matches}
-
-  /* ---------- settings (text size / contrast / motion) ---------- */
-  var settings = {};
-  try{settings = JSON.parse(localStorage.getItem(STORE))||{}}catch(e){}
-  if(!settings.motion && systemReduced.matches) settings.motion='reduced';
-  function applySettings(){
-    root.dataset.textSize = settings['text-size']||'default';
-    root.dataset.theme = settings.theme||'default';
-    root.dataset.motion = settings.motion||'full';
-    ['text-size','theme','motion'].forEach(function(k){
-      var input = $('input[name="'+k+'"][value="'+(settings[k]||(k==='motion'?'full':'default'))+'"]');
-      if(input) input.checked = true;
+  setup() {
+    const root = this.rootRef.current; if (!root) return;
+    root.querySelectorAll('canvas[data-scratch]').forEach(c => {
+      if (c._ready) return; c._ready = true;
+      const i = +c.dataset.scratch; this.paint(c);
+      const x = c.getContext('2d'); let down = false, last = null;
+      const pos = e => { const r = c.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; };
+      const draw = p => {
+        x.globalCompositeOperation = 'destination-out'; x.lineCap = 'round'; x.lineWidth = 42;
+        x.beginPath(); x.moveTo(...(last || p)); x.lineTo(...p); x.stroke(); last = p;
+      };
+      const check = () => {
+        const { data } = x.getImageData(0, 0, c.width, c.height); let clear = 0, n = 0;
+        for (let k = 3; k < data.length; k += 64) { n++; if (data[k] < 10) clear++; }
+        if (clear / n > .5) this.reveal(i);
+      };
+      c.addEventListener('pointerdown', e => { down = true; last = null; c.setPointerCapture(e.pointerId); draw(pos(e)); });
+      c.addEventListener('pointermove', e => { if (down) { draw(pos(e)); if (Math.random() < .4) this.burst(e.clientX, e.clientY, 1, { colors: ['#c9ced8', '#e9ecf2', '#a7aebd'], hearts: false, size: 5, spread: 30, lift: -10, gravity: 90, dur: 700 }); } });
+      const up = () => { if (down) { down = false; check(); } };
+      c.addEventListener('pointerup', up); c.addEventListener('pointercancel', up);
     });
   }
-  applySettings();
-  $$('.settings-panel input').forEach(function(i){
-    i.addEventListener('change',function(){settings[i.name]=i.value;try{localStorage.setItem(STORE,JSON.stringify(settings))}catch(e){}applySettings();if(i.name==='text-size')buildCoaster()});
-  });
-  var settingsToggle = $('#settings-toggle'), settingsPanel = $('#settings-panel');
-  function toggleSettings(open){settingsPanel.hidden=!open;settingsToggle.setAttribute('aria-expanded',open);if(open)closeNav()}
-  settingsToggle.addEventListener('click',function(){toggleSettings(settingsPanel.hidden)});
 
-  /* ---------- nav ---------- */
-  var navDrawer = $('#nav-drawer'), navToggle = $('#nav-toggle');
-  var lists = $$('[data-nav-list]'); lists[1].innerHTML = lists[0].innerHTML;
-  function closeNav(){navDrawer.hidden=true;navToggle.setAttribute('aria-expanded','false');navToggle.textContent='Menu'}
-  navToggle.addEventListener('click',function(){var open=navDrawer.hidden;navDrawer.hidden=!open;navToggle.setAttribute('aria-expanded',open);navToggle.textContent=open?'Close':'Menu';if(open)toggleSettings(false)});
-  navDrawer.addEventListener('click',function(e){if(e.target.closest('a'))closeNav()});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape'){if(!settingsPanel.hidden){toggleSettings(false);settingsToggle.focus()}if(!navDrawer.hidden){closeNav();navToggle.focus()}}});
-  document.addEventListener('click',function(e){if(!settingsPanel.hidden&&!e.target.closest('#settings-panel,#settings-toggle'))toggleSettings(false)});
-
-  var navLinks = $$('.nav-list-item a');
-  if('IntersectionObserver' in window){
-    var navObs = new IntersectionObserver(function(entries){entries.forEach(function(en){if(en.isIntersecting){var id=en.target.id;navLinks.forEach(function(a){var on=a.getAttribute('href')==='#'+id;a.parentNode.classList.toggle('nav-list-item-active',on);if(on)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current')})}})},{rootMargin:'-45% 0px -50% 0px'});
-    ['ride','family','love','survived','stats','release','photos','letter'].forEach(function(id){navObs.observe(document.getElementById(id))});
+  componentDidMount() {
+    document.documentElement.lang = 'fil';
+    this._onResize = () => { clearTimeout(this._rz); this._rz = setTimeout(() => this.rootRef.current && this.rootRef.current.querySelectorAll('canvas[data-scratch]').forEach(c => { if (!this.state.revealed.includes(+c.dataset.scratch)) this.paint(c); }), 200); };
+    addEventListener('resize', this._onResize);
+    this._prev = this.state; this.tickClock(); this.clockT = setInterval(() => this.tickClock(), 1000);
+    this.scanReveal(); this.animWords(); this.ambient(); this.initStickers(); this.restartKulit();
+    if (!this.rm && this.rootRef.current) { const rec = this.rootRef.current.querySelector('[data-rec]'), kb = this.rootRef.current.querySelector('[data-kbob]'); rec && rec.animate([{ opacity: 1 }, { opacity: .15 }], { duration: 700, iterations: Infinity, direction: 'alternate' }); kb && kb.animate([{ transform: 'translateY(0)' }, { transform: 'translateY(-8px)' }, { transform: 'translateY(0)' }], { duration: 3000, iterations: Infinity, easing: 'ease-in-out' }); }
+    this.rootRef.current && this.rootRef.current.addEventListener('pointerdown', e => { const b = e.target.closest('button'); if (b && !b.disabled && !this.rm) b.animate([{ transform: 'scale(1)' }, { transform: 'scale(.93)' }, { transform: 'scale(1)' }], { duration: 260, easing: 'ease-out' }); });
+    this.t = setTimeout(() => this.setup(), 60);
+    document.fonts && document.fonts.ready.then(() => this.rootRef.current && this.rootRef.current.querySelectorAll('canvas[data-scratch]').forEach(c => { if (!this.state.revealed.includes(+c.dataset.scratch)) this.paint(c); }));
   }
+  componentDidUpdate() { const ps = this._prev || this.state; this._prev = this.state; this.setup(); this.scanReveal(); this.initStickers(); try { this.afterUpdate(ps); } catch (e) { console.warn(e); } }
 
-  /* ---------- scroll progress ---------- */
-  var bar = $('#scroll-progress'), ticking=false;
-  window.addEventListener('scroll',function(){if(ticking)return;ticking=true;requestAnimationFrame(function(){var h=document.documentElement.scrollHeight-innerHeight;bar.style.transform='scaleX('+(h>0?scrollY/h:0)+')';ticking=false})},{passive:true});
-
-  /* ---------- intro ---------- */
-  var intro = $('#intro-screen');
-  function enter(){
-    intro.classList.add('intro-screen-leaving');
-    document.body.classList.remove('intro-open');
-    setTimeout(function(){intro.hidden=true},reducedMotion()?0:700);
-    $('#main').focus({preventScroll:true});
-    window.scrollTo(0,0);
-  }
-  $('#intro-enter').addEventListener('click',enter);
-  $('#intro-skip').addEventListener('click',enter);
-  if(reducedMotion()) $$('.intro-screen-line').forEach(function(l){l.style.animation='none';l.style.opacity=1;l.style.transform='none'});
-  setTimeout(function(){if(!intro.hidden)$('#intro-enter').focus({preventScroll:true})},reducedMotion()?0:3400);
-
-  /* ---------- reveal ---------- */
-  if('IntersectionObserver' in window){
-    var revealObs = new IntersectionObserver(function(entries){entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('reveal-visible');revealObs.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px'});
-    $$('.reveal').forEach(function(el,i){el.style.transitionDelay=(i%4)*60+'ms';revealObs.observe(el)});
-  } else $$('.reveal').forEach(function(el){el.classList.add('reveal-visible')});
-
-  /* ---------- coaster ---------- */
-  var STAGES = [
-    {name:'The Beginning', feel:'↗ Climbing', text:'Where this crazy little story started.', pt:[40,210]},
-    {name:'The Butterflies', feel:'▲ First peak', text:'When everything felt exciting, cute and suspiciously perfect.', pt:[165,80]},
-    {name:'The Chaos', feel:'↘ Dropping', text:"Because apparently loving each other wasn't enough.\nWe also had to test each other's patience.", pt:[295,220]},
-    {name:'The Fights', feel:'▼ Lowest point', text:'Plot twist: We are both stubborn.', pt:[425,275]},
-    {name:'The Make-ups', feel:'↗ Climbing back', text:'And somehow… we always find our way back.', pt:[555,135]},
-    {name:'The Soft Moments', feel:'▲ Cruising high', text:'The cuddles.\nThe random messages.\nThe quiet moments.\nThe little things.', pt:[685,70]},
-    {name:'The Family', feel:'↺ Loop-the-loop', text:'Then somehow we ended up with a whole household.', pt:[815,150]},
-    {name:'The Now', feel:'★ Highest point yet', text:'1 year and 9 months later…', pt:[955,40]}
-  ];
-  var tabsEl=$('#coaster-tabs'), railBlue=$('#coaster-rail-blue'), railRed=$('#coaster-rail-red'), railBase=$('#coaster-rail-base'), cart=$('#coaster-cart');
-  var current=0, stopLens=[], total=0, cartLen=0, visited=new Set([0]);
-  STAGES.forEach(function(s,i){
-    var b=document.createElement('button');
-    b.type='button';b.className='coaster-tab';b.setAttribute('role','tab');b.id='coaster-tab-'+i;b.setAttribute('aria-controls','coaster-panel');
-    b.innerHTML='<span class="coaster-tab-number">'+String(i+1).padStart(2,'0')+'</span><span class="coaster-tab-name">'+s.name+'</span>';
-    b.addEventListener('click',function(){goStage(i)});
-    tabsEl.appendChild(b);
-  });
-  tabsEl.addEventListener('keydown',function(e){
-    var k=e.key, n=null;
-    if(k==='ArrowRight')n=Math.min(current+1,7); else if(k==='ArrowLeft')n=Math.max(current-1,0); else if(k==='Home')n=0; else if(k==='End')n=7;
-    if(n!==null){e.preventDefault();goStage(n);tabsEl.children[n].focus()}
-  });
-  function pathFrom(pts){
-    var d='M'+pts[0][0]+','+pts[0][1];
-    for(var i=0;i<pts.length-1;i++){
-      var p0=pts[i-1]||pts[i],p1=pts[i],p2=pts[i+1],p3=pts[i+2]||p2;
-      d+=' C'+(p1[0]+(p2[0]-p0[0])/6)+','+(p1[1]+(p2[1]-p0[1])/6)+' '+(p2[0]-(p3[0]-p1[0])/6)+','+(p2[1]-(p3[1]-p1[1])/6)+' '+p2[0]+','+p2[1];
+  rm = typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  seen = new WeakSet();
+  fxLayer() { if (!this._fx) { const d = document.createElement('div'); d.style.cssText = 'position:fixed;inset:0;pointer-events:none;z-index:9999;overflow:hidden'; document.body.appendChild(d); this._fx = d; } return this._fx; }
+  burst(x, y, n, o) {
+    o = o || {}; if (this.rm) return; const L = this.fxLayer(), cols = o.colors || ['#7aa7e8', '#e8707e', '#f3d6a0', '#ffffff'];
+    for (let k = 0; k < n; k++) {
+      const s = document.createElement('span'), heart = o.hearts != null ? o.hearts : Math.random() < .5, c = cols[k % cols.length], sz = o.size || (8 + Math.random() * 10);
+      s.textContent = heart ? '♥' : '';
+      s.style.cssText = 'position:absolute;left:' + x + 'px;top:' + y + 'px;line-height:1;font-size:' + (sz * 1.5) + 'px;color:' + c + ';' + (heart ? '' : 'width:' + sz + 'px;height:' + (sz * .6) + 'px;background:' + c + ';border-radius:2px;');
+      L.appendChild(s);
+      const a = Math.random() * Math.PI * 2, v = (o.spread || 120) * (.4 + Math.random() * .8), dx = Math.cos(a) * v, dy = Math.sin(a) * v - (o.lift != null ? o.lift : 60), g = o.gravity != null ? o.gravity : 160, r = (Math.random() - .5) * 720;
+      s.animate([
+        { transform: 'translate(-50%,-50%) scale(.4)', opacity: 1 },
+        { transform: 'translate(calc(-50% + ' + dx + 'px),calc(-50% + ' + dy + 'px)) rotate(' + r / 2 + 'deg) scale(1)', opacity: 1, offset: .45 },
+        { transform: 'translate(calc(-50% + ' + dx * 1.3 + 'px),calc(-50% + ' + (dy + g) + 'px)) rotate(' + r + 'deg) scale(.8)', opacity: 0 }
+      ], { duration: (o.dur || 1100) * (.7 + Math.random() * .6), easing: 'cubic-bezier(.2,.7,.4,1)' }).onfinish = () => s.remove();
     }
-    return d;
   }
-  function lenAtX(x){var lo=0,hi=total;for(var j=0;j<24;j++){var m=(lo+hi)/2;if(railBase.getPointAtLength(m).x<x)lo=m;else hi=m}return (lo+hi)/2}
-  function buildCoaster(){
-    var d=pathFrom(STAGES.map(function(s){return s.pt}));
-    [railBase,railBlue,railRed].forEach(function(p){p.setAttribute('d',d)});
-    total=railBase.getTotalLength();
-    stopLens=STAGES.map(function(s){return lenAtX(s.pt[0])});
-    var sup=$('#coaster-supports'); sup.innerHTML='';
-    for(var x=20;x<=980;x+=40){var p=railBase.getPointAtLength(lenAtX(x));var l=document.createElementNS('http://www.w3.org/2000/svg','line');l.setAttribute('x1',p.x);l.setAttribute('x2',p.x);l.setAttribute('y1',p.y+8);l.setAttribute('y2',318);l.setAttribute('class','coaster-track-support');sup.appendChild(l)}
-    var stops=$('#coaster-stops'); stops.innerHTML='';
-    STAGES.forEach(function(s,i){
-      var c=document.createElementNS('http://www.w3.org/2000/svg','circle');c.setAttribute('cx',s.pt[0]);c.setAttribute('cy',s.pt[1]);c.setAttribute('r',8);c.setAttribute('class','coaster-track-stop');c.dataset.i=i;stops.appendChild(c);
-      var t=document.createElementNS('http://www.w3.org/2000/svg','text');t.setAttribute('x',s.pt[0]);t.setAttribute('y',s.pt[1]+ (i===3?-18:32));t.setAttribute('class','coaster-track-stop-label');t.textContent=String(i+1).padStart(2,'0');stops.appendChild(t);
-    });
-    setRide(stopLens[current]);
+  hide(el) { if (this.seen.has(el)) return false; this.seen.add(el); el._hid = el.animate([{ opacity: 0, transform: 'translateY(28px)' }], { duration: 1, fill: 'forwards' }); return true; }
+  show(el, d) { el._hid && el._hid.cancel(); el.animate([{ opacity: 0, transform: 'translateY(28px)', filter: 'blur(6px)' }, { opacity: 1, transform: 'none', filter: 'blur(0)' }], { duration: 800, delay: d, easing: 'cubic-bezier(.2,.8,.2,1)', fill: 'backwards' }); }
+  scanReveal() {
+    const root = this.rootRef.current; if (!root || this.rm || typeof IntersectionObserver === 'undefined') return;
+    if (!this.io) this.io = new IntersectionObserver(es => { let b = 0; es.forEach(e => { if (!e.isIntersecting) return; this.io.unobserve(e.target); this.show(e.target, b++ * 90); }); }, { threshold: .12 });
+    root.querySelectorAll('[data-reveal]').forEach(el => { if (this.hide(el)) this.io.observe(el); });
+    root.querySelectorAll('[data-reveal-group]').forEach(g => Array.from(g.children).forEach(el => { if (el.matches('h1') || el.querySelector('[data-word]')) return; if (this.hide(el)) this.io.observe(el); }));
   }
-  function setRide(L){
-    cartLen=L;
-    [railBlue,railRed].forEach(function(p){p.style.strokeDasharray=total;p.style.strokeDashoffset=total-L});
-    var p=railBase.getPointAtLength(L), p2=railBase.getPointAtLength(Math.min(L+2,total));
-    var ang=Math.atan2(p2.y-p.y,p2.x-p.x)*180/Math.PI;
-    cart.setAttribute('transform','translate('+p.x+','+p.y+') rotate('+ang+')');
-    $$('.coaster-track-stop').forEach(function(c){c.classList.toggle('coaster-track-stop-passed',stopLens[c.dataset.i]<=L+1)});
+  animWords() { if (this.rm || !this.rootRef.current) return; this.rootRef.current.querySelectorAll('[data-word]').forEach((w, i) => w.animate([{ opacity: 0, transform: 'translateY(60%)', filter: 'blur(8px)' }, { opacity: 1, transform: 'none', filter: 'blur(0)' }], { duration: 900, delay: 150 + i * 110, easing: 'cubic-bezier(.2,.9,.25,1.2)', fill: 'backwards' })); }
+  ambient() {
+    if (this.rm) return;
+    this.ambT = setInterval(() => {
+      const hd = this.rootRef.current && this.rootRef.current.querySelector('header'); if (!hd) return; const r = hd.getBoundingClientRect(); if (r.bottom < 0) return;
+      const L = this.fxLayer(), s = document.createElement('span'); s.textContent = '♥';
+      s.style.cssText = 'position:absolute;left:' + (r.left + Math.random() * r.width) + 'px;top:' + r.bottom + 'px;font-size:' + (12 + Math.random() * 16) + 'px;color:' + (Math.random() < .5 ? '#7aa7e8' : '#e8707e') + ';opacity:0';
+      L.appendChild(s);
+      s.animate([{ transform: 'translateY(0)', opacity: 0 }, { opacity: .5, offset: .2 }, { transform: 'translate(' + (Math.random() - .5) * 60 + 'px,-' + (180 + Math.random() * 160) + 'px)', opacity: 0 }], { duration: 4000 + Math.random() * 2000, easing: 'ease-out' }).onfinish = () => s.remove();
+    }, 900);
   }
-  var rideRaf;
-  function animateTo(target){
-    cancelAnimationFrame(rideRaf);
-    if(reducedMotion()){setRide(target);return}
-    var from=cartLen,t0=performance.now(),dur=900;
-    (function step(now){var k=Math.min((now-t0)/dur,1);k=k<.5?4*k*k*k:1-Math.pow(-2*k+2,3)/2;setRide(from+(target-from)*k);if(k<1)rideRaf=requestAnimationFrame(step)})(t0);
+  popTicket(i) {
+    if (this.rm || !this.rootRef.current) return; const c = this.rootRef.current.querySelector('canvas[data-scratch="' + i + '"]'); if (!c) return;
+    const art = c.closest('article'), pr = art.querySelector('[data-prize]'), r = art.getBoundingClientRect();
+    art.animate([{ transform: 'scale(1)' }, { transform: 'scale(1.05)' }, { transform: 'scale(.98)' }, { transform: 'scale(1)' }], { duration: 600, easing: 'ease-out' });
+    pr && pr.animate([{ transform: 'scale(.6)', opacity: 0, filter: 'blur(6px)' }, { transform: 'scale(1.08)', opacity: 1, filter: 'blur(0)', offset: .6 }, { transform: 'scale(1)' }], { duration: 700, easing: 'cubic-bezier(.2,.9,.3,1.3)' });
+    this.burst(r.left + r.width / 2, r.top + r.height / 2, 22, { hearts: true });
   }
-  function goStage(i){
-    current=i;visited.add(i);
-    var s=STAGES[i], panel=$('#coaster-panel');
-    $$('.coaster-tab').forEach(function(t,j){t.setAttribute('aria-selected',j===i);t.tabIndex=j===i?0:-1});
-    panel.setAttribute('aria-labelledby','coaster-tab-'+i);
-    $('#coaster-index').textContent=String(i+1).padStart(2,'0');
-    $('#coaster-feel').textContent=s.feel;
-    $('#coaster-title').textContent=s.name;
-    $('#coaster-text').textContent=s.text;
-    panel.classList.remove('coaster-panel-animating');void panel.offsetWidth;panel.classList.add('coaster-panel-animating');
-    $('#coaster-prev').disabled=i===0;
-    $('#coaster-next').setAttribute('aria-label',i===7?'Back to the beginning':'Next stop');
-    $('#coaster-next').textContent=i===7?'↺':'→';
-    if(i===7)$('#coaster-finale').hidden=false;
-    var tab=tabsEl.children[i]; tabsEl.scrollTo({left:tab.offsetLeft-tabsEl.offsetLeft-8,behavior:reducedMotion()?'auto':'smooth'});
-    animateTo(stopLens[i]);
+  jackpot() {
+    const w = innerWidth, hh = innerHeight;
+    for (let k = 0; k < 6; k++) setTimeout(() => this.burst(w * (k + .5) / 6, hh * (.25 + Math.random() * .3), 28, { spread: 220, gravity: 260, dur: 1600 }), k * 160);
+    const j = this.rootRef.current && this.rootRef.current.querySelector('[data-jackpot]');
+    if (j) setTimeout(() => j.animate([{ transform: 'scale(.96)', boxShadow: '0 0 0 0 oklch(0.68 0.16 18 / .6)' }, { transform: 'scale(1)', boxShadow: '0 0 0 24px oklch(0.68 0.16 18 / 0)' }], { duration: 900, easing: 'ease-out' }), 300);
   }
-  $('#coaster-prev').addEventListener('click',function(){if(current>0)goStage(current-1)});
-  $('#coaster-next').addEventListener('click',function(){goStage(current===7?0:current+1)});
-  buildCoaster(); goStage(0);
+  printAnim() {
+    const root = this.rootRef.current, p = root.querySelector('[data-paper]'), s = root.querySelector('[data-stamp]'), led = root.querySelector('[data-led]'); if (!p) return;
+    this.setState({ printing: true }); clearTimeout(this.prT); this.prT = setTimeout(() => this.setState({ printing: false }), this.rm ? 0 : 2900);
+    if (this.rm) return;
+    led && led.animate([{ opacity: 1 }, { opacity: .2 }], { duration: 160, iterations: 14, direction: 'alternate' });
+    const wrap = root.querySelector('[data-paperwrap]'), head = root.querySelector('[data-printhead]');
+    wrap && wrap.animate([{ clipPath: 'inset(0 0 100% 0)' }, { clipPath: 'inset(0 0 100% 0)', offset: .08 }, { clipPath: 'inset(0 0 0% 0)' }], { duration: 2200, easing: 'steps(24, end)', fill: 'backwards' });
+    head && head.animate([{ top: '0%', opacity: 0 }, { top: '0%', opacity: 1, offset: .08 }, { top: '100%', opacity: 1, offset: .92 }, { top: '100%', opacity: 0 }], { duration: 2400, easing: 'linear' });
+    if (s) s.animate([{ opacity: 0, transform: 'scale(2.8)' }, { opacity: .92, transform: 'scale(.92)', offset: .75 }, { opacity: .92, transform: 'scale(1)' }], { duration: 420, delay: 2450, easing: 'cubic-bezier(.3,0,.7,1)', fill: 'backwards' }).onfinish = () => {
+      p.animate([{ transform: 'translate(0,0)' }, { transform: 'translate(-3px,2px)' }, { transform: 'translate(3px,-1px)' }, { transform: 'translate(0,0)' }], { duration: 220 });
+      const r = s.getBoundingClientRect(); this.burst(r.left + r.width / 2, r.top + r.height / 2, 16, { colors: ['#e8707e', '#c9405a'] });
+    };
+  }
+  pickMood(i) {
+    clearTimeout(this.tyT); clearInterval(this.tyI); const full = this.moodData[i][1];
+    if (this.rm) { this.setState({ mood: i, typed: full, typing: 0 }); return; }
+    this.setState({ mood: i, typed: '', typing: 1 });
+    this.tyT = setTimeout(() => { this.setState({ typing: 2 }); let n = 0; this.tyI = setInterval(() => { n++; this.setState({ typed: full.slice(0, n) }); if (n >= full.length) { clearInterval(this.tyI); this.setState({ typing: 0 }); } }, 24); }, 800);
+  }
+  dropCoin() {
+    const t = this.state.wishDraft.trim(); if (!t) return;
+    const commit = () => { const wishes = [t].concat(this.state.wishes); this.lsSet('bubu-m22-wishes', wishes); this.setState({ wishes }); };
+    this.setState({ wishDraft: '' });
+    const root = this.rootRef.current, b = root.querySelector('[data-coinbtn]'), w = root.querySelector('[data-well]');
+    if (this.rm || !b || !w) { commit(); return; }
+    const br = b.getBoundingClientRect(), wr = w.getBoundingClientRect(), L = this.fxLayer(), c = document.createElement('span');
+    const x0 = br.left + br.width / 2, y0 = br.top, dx = wr.left + wr.width / 2 - x0, dy = wr.top + wr.height / 2 - y0;
+    c.style.cssText = 'position:absolute;left:' + x0 + 'px;top:' + y0 + 'px;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff3c4,#e6b43c 55%,#a8781c);box-shadow:0 2px 6px rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;font-size:13px;color:#7a5410';
+    c.textContent = '♥'; L.appendChild(c);
+    c.animate([
+      { transform: 'translate(0,0) rotateY(0) scale(1)' },
+      { transform: 'translate(' + dx * .5 + 'px,' + (Math.min(dy, 0) - 90) + 'px) scale(1.15)', offset: .45 },
+      { transform: 'translate(' + dx + 'px,' + dy + 'px) scale(.5)', opacity: 1, offset: .92 },
+      { transform: 'translate(' + dx + 'px,' + (dy + 6) + 'px) scale(.2)', opacity: 0 }
+    ], { duration: 1100, easing: 'cubic-bezier(.4,0,.6,1)' }).onfinish = () => { c.remove(); this.ripple(w); commit(); };
+  }
+  ripple(w) { for (let k = 0; k < 3; k++) { const r = document.createElement('span'); r.style.cssText = 'position:absolute;inset:0;border-radius:50%;border:2px solid oklch(0.82 0.09 250);pointer-events:none'; w.appendChild(r); r.animate([{ transform: 'scale(.15)', opacity: .9 }, { transform: 'scale(1)', opacity: 0 }], { duration: 900, delay: k * 180, easing: 'ease-out', fill: 'backwards' }).onfinish = () => r.remove(); } }
+  afterUpdate(ps) {
+    const root = this.rootRef.current, st = this.state; if (!root) return;
+    if (st.stub && (!ps.stub || ps.stub.code !== st.stub.code)) this.printAnim();
+    if (this.rm) return;
+    const q = s => root.querySelector(s);
+    if (ps.revealed.length !== st.revealed.length) { const c = q('[data-count]'); c && c.animate([{ transform: 'scale(1)' }, { transform: 'scale(1.35)', color: '#e8707e' }, { transform: 'scale(1)' }], { duration: 450 }); if (st.revealed.length >= 6 && ps.revealed.length < 6) setTimeout(() => this.jackpot(), 400); }
+    if (st.spinning && st.drawIdx !== ps.drawIdx) { const t = q('[data-drawtext]'); t && t.animate([{ transform: 'translateY(-70%)', opacity: .2, filter: 'blur(4px)' }, { transform: 'none', opacity: 1, filter: 'blur(0)' }], { duration: 90 }); }
+    if (st.spinning && !ps.spinning) { const d = q('[data-drum]'); if (d) this.drumA = d.animate([{ transform: 'translateY(0) scale(1)' }, { transform: 'translateY(-12px) scale(1.04)' }, { transform: 'translateY(0) scale(.96,1.04)' }], { duration: 320, iterations: Infinity, easing: 'ease-in-out' }); }
+    if (!st.spinning && ps.spinning) {
+      this.drumA && this.drumA.cancel(); const d = q('[data-drum]'), card = q('[data-drawcard]'), t = q('[data-drawtext]');
+      d && d.animate([{ transform: 'scale(1)' }, { transform: 'scale(1.25)' }, { transform: 'scale(.94)' }, { transform: 'scale(1)' }], { duration: 600, easing: 'ease-out' });
+      t && t.animate([{ transform: 'scale(.8)' }, { transform: 'scale(1.12)' }, { transform: 'scale(1)' }], { duration: 600, easing: 'cubic-bezier(.2,.9,.3,1.4)' });
+      if (card) { const r = card.getBoundingClientRect(); this.burst(r.left + r.width / 2, r.top + r.height / 2, 26, {}); }
+    }
+    if ((st.kIdx || 0) !== (ps.kIdx || 0)) this.animKulit((st.kIdx || 0) === 2);
+    if (st.mood !== ps.mood && st.mood != null) { const c = q('[data-moodcard]'); c && c.animate([{ transform: 'scale(1)' }, { transform: 'scale(.97)' }, { transform: 'scale(1.02)' }, { transform: 'scale(1)' }], { duration: 500 }); }
+    if (st.typing === 1 && ps.typing !== 1) { const m = q('[data-moodmsg]'); m && m.animate([{ opacity: 1 }, { opacity: .25 }, { opacity: 1 }], { duration: 400, iterations: 2 }); }
+    if (st.wishes.length > ps.wishes.length) { const li = q('[data-wishlist] li'); li && li.animate([{ opacity: 0, transform: 'translateY(-14px) scale(.92)' }, { opacity: 1, transform: 'none' }], { duration: 500, easing: 'cubic-bezier(.2,.9,.3,1.3)' }); }
+    if (ps.cd && st.cd) { const els = root.querySelectorAll('[data-cdv]'); st.cd.forEach((v, i) => { if (v !== ps.cd[i] && els[i]) els[i].animate([{ transform: 'translateY(-45%)', opacity: 0 }, { transform: 'none', opacity: 1 }], { duration: 280, easing: 'cubic-bezier(.2,.9,.3,1.2)' }); }); }
+  }
+  componentWillUnmount() { clearTimeout(this.t); clearInterval(this.spinT); clearInterval(this.clockT); clearInterval(this.ambT); clearInterval(this.kT); removeEventListener('resize', this._onResize); clearInterval(this.tyI); clearTimeout(this.tyT); clearTimeout(this.prT); this.io && this.io.disconnect(); this._fx && this._fx.remove(); }
 
-  /* ---------- love cards ---------- */
-  var LOVES=[
-    ['Your smile',"Your simple, cute and little sweet voice and laughter make me kilig."],
-    ['Your little habits',"The ones you don't even notice you do. I notice. I've memorized them. I'd miss every single one. Remember, may notes pa ko."],
-    ['The way you annoy me',"Nobody gets under my skin like you do. Nobody! Especially when you make hawak to my siopao butt. And I'd still pick you to annoy me forever with your endless sikmat."],
-    ['The way you make me laugh',"The stupid jokes, the faces, the voices. I've laughed harder with you than with anyone. Specifically when you sound like a little Labababsss."],
-    ['Your clinginess',"Don't you dare stop. I pretend to complain, but I'd be lost without you hanging on me. Bawal ma-DC, stay on the line."],
-    ['The way you make ordinary days feel special',"Somehow it feels like a date with you. When we share movie nights and budol days. Let's go, pinduoduowell is real."],
-    ['The way you stay',"Even after the fights, even when I'm difficult. You stay. That means more than I ever say out loud. Don't you dare drop our call ever again. Sad si Lulu."],
-    ['The way you make me feel loved',"Safe, wanted, home. You make me feel all three, usually at the same time, even when we're distant. Random food treats mo sakin palagi. Lulu will make bawi soon."]
+  ideas = ['Street food crawl, tapos dessert', 'Sunrise date, kahit antok tayo', 'Cook-off: sino mas masarap magluto', 'Arcade night, loser libre milk tea', 'Picnic with siopao (obviously)', 'Bookstore date, pick a book for each other', 'Long drive, your playlist', 'Stay-in spa night, face masks included', 'Try the restaurant we keep saying "next time"', 'Karaoke, duet required'];
+  terms = [
+    'Tickets are valid for one (1) Lala only. Hindi pwedeng ipahiram sa kahit sino.',
+    'Bubu reserves the right to add surprise bonus kisses without prior notice.',
+    'Tampo pass excludes tampo caused by not replying for 3+ hours. Alam mo na yan.',
+    'Prizes not claimed by Nov 29 roll over. Walang nasasayang dito.',
+    'By scratching, you agree to love Bubu for month 23, 24, and all the ones after.'
   ];
-  var loveGrid=$('#love-grid'), opened=new Set();
-  LOVES.forEach(function(l,i){
-    var li=document.createElement('li');li.className='love-card reveal reveal-visible';
-    li.innerHTML='<button class="love-card-button" type="button" aria-expanded="false" aria-label="'+l[0]+' — tap to read">'+
-      '<span class="love-card-face love-card-front"><span class="love-card-index">'+String(i+1).padStart(2,'0')+' / 08</span><span class="love-card-title">'+l[0]+'</span><span class="love-card-hint">Tap to read <span aria-hidden="true">↻</span></span></span>'+
-      '<span class="love-card-face love-card-back" aria-hidden="true"><span class="love-card-message">'+l[1]+'</span><span class="love-card-sign">— B 💙 · tap to flip back</span></span></button>';
-    var btn=li.firstChild;
-    btn.addEventListener('click',function(){
-      var open=!li.classList.contains('love-card-open');
-      li.classList.toggle('love-card-open',open);btn.setAttribute('aria-expanded',open);
-      li.querySelector('.love-card-back').setAttribute('aria-hidden',!open);
-      li.querySelector('.love-card-front').setAttribute('aria-hidden',open);
-      btn.setAttribute('aria-label',open?l[0]+': '+l[1]:l[0]+' — tap to read');
-      if(open)opened.add(i);
-      $('#love-progress').textContent=opened.size===8?'All 8 opened. Told you I meant every one. 💙':opened.size+' of 8 opened';
+
+  stickerData = [
+    ['stk_road.jpg', 'Road trip, forever', '230px', '16/9', '100% auto', '50% 0%', '20px'],
+    ['stk_cuddle.jpg', 'Siopao cuddles', '170px', '1/1', '250%', '50% 51%', '50%'],
+    ['stk_call.jpg', 'Kahit malayo', '200px', '1/1', 'cover', '50% 50%', '26px'],
+    ['stk_chef.jpg', 'Chef Bubu', '200px', '1/1', 'cover', '50% 50%', '50%'],
+    ['stk_world.png', 'Silip', '120px', '0.45', 'auto 100%', '0% 0%', '26px'],
+    ['stk_carry.jpg', 'Buhat mo ako', '180px', '1/1', '115%', '50% 45%', '50%'],
+    ['stk_fight.jpg', 'Away-bati', '180px', '4/5', 'cover', '50% 100%', '22px'],
+    ['stk_cozy.jpg', 'Cozy us', '220px', '4/3', '112%', '50% 40%', '20px'],
+    ['stk_road.jpg', 'Hanggang pagtanda', '230px', '16/9', '100% auto', '50% 100%', '20px']
+  ];
+  initStickers() {
+    const root = this.rootRef.current; if (!root) return;
+    root.querySelectorAll('[data-sticker]').forEach((el, i) => {
+      if (el._st) return; el._st = 1;
+      const bob = el.querySelector('[data-bob]'), card = el.querySelector('[data-card]'), gloss = el.querySelector('[data-gloss]');
+      if (!this.rm && bob) bob.animate([{ transform: 'translateY(0)' }, { transform: 'translateY(-7px)' }, { transform: 'translateY(0)' }], { duration: 2600 + (i % 3) * 500, delay: -i * 420, iterations: Infinity, easing: 'ease-in-out' });
+      const shine = () => { if (!this.rm && gloss) gloss.animate([{ backgroundPosition: '100% 0' }, { backgroundPosition: '0% 0' }], { duration: 700, easing: 'ease-out' }); };
+      el.addEventListener('pointerenter', shine);
+      let sx = 0, sy = 0, ox = 0, oy = 0, down = false, moved = false;
+      el.addEventListener('pointerdown', e => { down = true; moved = false; sx = e.clientX - ox; sy = e.clientY - oy; el.setPointerCapture(e.pointerId); el.style.zIndex = 5; el.style.cursor = 'grabbing'; el.style.scale = '1.08'; });
+      el.addEventListener('pointermove', e => { if (!down) return; const sheet = el.parentElement.getBoundingClientRect(), me = el.getBoundingClientRect(), bx = me.left - ox, by = me.top - oy;
+        const nx = Math.max(sheet.left + 8 - bx, Math.min(sheet.right - 8 - me.width - bx, e.clientX - sx)), ny = Math.max(sheet.top + 8 - by, Math.min(sheet.bottom - 8 - me.height - by, e.clientY - sy)); if (Math.abs(nx - ox) + Math.abs(ny - oy) > 3) moved = true; ox = nx; oy = ny; el.style.translate = ox + 'px ' + oy + 'px'; });
+      const up = e => {
+        if (!down) return; down = false; el.style.cursor = ''; el.style.scale = '';
+        const r = card.getBoundingClientRect();
+        if (this.rm) return;
+        if (moved) { card.animate([{ transform: 'scale(1.1)' }, { transform: 'scale(.95)' }, { transform: 'scale(1)' }], { duration: 320, easing: 'ease-out' }); this.burst(r.left + r.width / 2, r.bottom - 10, 8, { colors: ['#f3d6a0', '#ffffff'], hearts: false, size: 6, spread: 50, lift: 10, gravity: 40, dur: 600 }); }
+        else { shine(); card.animate([{ transform: 'scale(1)' }, { transform: 'scale(1.15)' }, { transform: 'scale(.94)' }, { transform: 'scale(1)' }], { duration: 520, easing: 'cubic-bezier(.2,.9,.3,1.4)' }); this.burst(r.left + r.width / 2, r.top + r.height / 2, 14, { hearts: true, colors: ['#e8707e', '#7aa7e8', '#f7a8b8'] }); }
+      };
+      el.addEventListener('pointerup', up); el.addEventListener('pointercancel', up);
     });
-    loveGrid.appendChild(li);
-  });
-
-  /* ---------- tease ---------- */
-  function revealer(btnId,ansId,boxId,after){
-    var b=$(btnId);b.addEventListener('click',function(){$(ansId).hidden=false;b.setAttribute('aria-expanded','true');$(boxId).classList.add('tease-reveal-done');if(after)after(b)});
-  }
-  revealer('#behave-button','#behave-answer','#behave-box',function(b){b.textContent='Asked and answered 😏'});
-  revealer('#secret-button','#secret-answer','#secret-box',function(b){b.textContent='That was the secret ❤️'});
-
-  /* ---------- badges ---------- */
-  var BADGES=['Survived our arguments','Survived my attitude','Survived your attitude','Survived the silent treatment','Survived being stubborn','Survived saying "I\'m fine"','Survived countless "nothing\'s wrong"','Survived 1 year and 9 months of us'];
-  var badgeGrid=$('#badge-grid'), claimed=0;
-  BADGES.forEach(function(name){
-    var li=document.createElement('li');li.className='reveal reveal-visible';
-    li.innerHTML='<button class="badge-item" type="button" aria-pressed="false"><span class="badge-item-medal" aria-hidden="true">🏆</span><span class="badge-item-text"><span class="badge-item-name">'+name+'</span><span class="badge-item-status">Tap to claim</span></span></button>';
-    li.firstChild.addEventListener('click',function(){claim(this)});
-    badgeGrid.appendChild(li);
-  });
-  function claim(b,silent){
-    if(b.getAttribute('aria-pressed')==='true')return;
-    b.setAttribute('aria-pressed','true');b.querySelector('.badge-item-status').textContent='✓ Claimed';claimed++;
-    $('#badge-counter').textContent=claimed+' / 8 claimed';
-    if(claimed===8){var f=$('#badge-final');f.classList.add('badge-final-unlocked');$('#badge-final-status').textContent='✓ Unlocked · permanent, non-transferable';$('#badge-claim-all').disabled=true}
-  }
-  $('#badge-claim-all').addEventListener('click',function(){$$('.badge-item').forEach(function(b){claim(b)})});
-
-  /* ---------- stats count-up ---------- */
-  var counters=$$('[data-count]');
-  if('IntersectionObserver' in window && !reducedMotion()){
-    counters.forEach(function(c){c.textContent='0'});
-    var cObs=new IntersectionObserver(function(entries){entries.forEach(function(en){if(!en.isIntersecting)return;cObs.unobserve(en.target);var el=en.target,to=+el.dataset.count,t0=performance.now();(function tick(now){var k=Math.min((now-t0)/900,1);el.textContent=Math.round(to*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(tick)})(t0)})},{threshold:.6});
-    counters.forEach(function(c){cObs.observe(c)});
   }
 
-  /* ---------- software: uninstall (error state) ---------- */
-  var out=$('#uninstall-output'), tries=0;
-  var ERRORS=['npm ERR! code EUNINSTALLABLE\nnpm ERR! This relationship has no uninstall option.','npm ERR! Still no. Did you try cuddling it instead?','npm ERR! Permission denied: Bubu said no. 💙'];
-  $('#uninstall-button').addEventListener('click',function(){out.className='release-terminal-output';out.textContent='Removing us…';setTimeout(function(){out.className='release-terminal-output release-terminal-error';out.textContent=ERRORS[Math.min(tries,2)];tries++},reducedMotion()?0:700)});
+  kulitData = [
+    ['stk_cuddle.jpg', 'Siopao butt attack', 'Akin ‘to ha! Bawal umangal.', '250%', '50% 51%'],
+    ['stk_carry.jpg', 'Buhat mo ako, now na', 'Giddy up, Dudu! Bilis!', '115%', '50% 45%'],
+    ['stk_fight.jpg', 'Tampo mode: activated', 'Hmp. Di kita bati. (5 mins lang)', 'cover', '50% 100%'],
+    ['stk_world.png', 'Sumisilip sa phone mo', 'Sino ka-chat mo? Charot.', '270%', '0% 30%'],
+    ['stk_cozy.jpg', 'Kiss muna bago tulog', 'Isa pa. Isa pa ulit. Last na. Joke.', '135%', '50% 45%'],
+    ['stk_chef.jpg', 'Tikim muna, Chef Bubu', 'Subuan mo ako, ahhh.', 'cover', '50% 50%']
+  ];
+  nextKulit = () => { this.setState(s => ({ kIdx: ((s.kIdx || 0) + 1) % this.kulitData.length })); this.restartKulit(); };
+  restartKulit() { clearInterval(this.kT); if (!this.rm) this.kT = setInterval(() => this.setState(s => ({ kIdx: ((s.kIdx || 0) + 1) % this.kulitData.length })), 3400); }
+  animKulit(fight) {
+    const root = this.rootRef.current; if (!root || this.rm) return;
+    const img = root.querySelector('[data-kimg]'), b = root.querySelector('[data-kbubble]'), cap = root.querySelector('[data-kcap]'), card = root.querySelector('[data-kcard]');
+    img && img.animate([{ transform: 'scale(.82)', opacity: 0, filter: 'blur(6px)' }, { transform: 'scale(1.06)', opacity: 1, filter: 'blur(0)', offset: .6 }, { transform: 'scale(1)' }], { duration: 650, easing: 'cubic-bezier(.2,.9,.3,1.3)' });
+    b && b.animate([{ transform: 'scale(0) translateY(20px)', opacity: 0 }, { transform: 'scale(0) translateY(20px)', opacity: 0, offset: .35 }, { transform: 'scale(1.12)', opacity: 1, offset: .8 }, { transform: 'scale(1)', opacity: 1 }], { duration: 750, easing: 'cubic-bezier(.2,.9,.3,1.4)', fill: 'backwards' });
+    cap && cap.animate([{ opacity: 0, transform: 'translateY(10px)' }, { opacity: 1, transform: 'none' }], { duration: 450, delay: 150, fill: 'backwards' });
+    if (card) {
+      if (fight) card.animate([{ transform: 'translateX(0)' }, { transform: 'translateX(-8px)' }, { transform: 'translateX(8px)' }, { transform: 'translateX(-5px)' }, { transform: 'translateX(5px)' }, { transform: 'translateX(0)' }], { duration: 500, delay: 300 });
+      else card.animate([{ transform: 'scale(1,1)' }, { transform: 'scale(1.05,.95)' }, { transform: 'scale(.97,1.03)' }, { transform: 'scale(1)' }], { duration: 500, easing: 'ease-out' });
+      const r = card.getBoundingClientRect(); if (r.bottom > 0 && r.top < innerHeight) this.burst(r.left + r.width * .8, r.top + 20, 8, { hearts: true, colors: ['#e8707e', '#f7a8b8', '#7aa7e8'], spread: 70, dur: 900 });
+    }
+  }
 
-  /* ---------- photo wall states ---------- */
-  $$('.photo-slot').forEach(function(slot){
-    var src=slot.dataset.src; if(!src){slot.classList.add('photo-slot-empty');return}
-    slot.classList.add('photo-slot-loading');
-    var img=new Image();img.alt=slot.querySelector('.photo-slot-caption').textContent;img.loading='lazy';img.decoding='async';
-    img.onload=function(){slot.classList.remove('photo-slot-loading');slot.classList.add('photo-slot-loaded')};
-    img.onerror=function(){slot.classList.remove('photo-slot-loading');slot.classList.add('photo-slot-error');slot.querySelector('.photo-slot-placeholder span').textContent="Couldn't load this one — check the file name"};
-    img.src=src;slot.querySelector('.photo-slot-media').prepend(img);
-  });
+  whenOpts = ['Ngayon na', 'This weekend', 'Surprise me'];
+  moodData = [
+    ['Miss mo ako', 'Ako rin, sobra. Close your eyes, isipin mo yakap ko. Ayan, andyan na ako. Tawag ka mamaya ha?'],
+    ['Pagod na', 'Pahinga ka muna, Lala. Proud ako sa’yo kahit hindi mo pa tapos lahat. Ako bahala mag-pamper sa’yo next time.'],
+    ['Gutom', 'Kain ka na, wag mo ako hintayin. Pero pag may siopao, share mo ako. Charot. Hindi charot.'],
+    ['Nagtatampo', 'Sorry na, Dudu. Kahit di ko alam ano ginawa ko. Kiss ko na lang yan pag nagkita tayo, okay?'],
+    ['Overthinking', 'Hinga ka. Andito ako, hindi ako aalis. Kahit gaano ka-chaotic, ikaw pa rin pipiliin ko.'],
+    ['Kinikilig', 'Ako rin! Kasi ikaw yan eh. Labababsss.']
+  ];
+  lsGet(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch (e) { return d; } }
+  lsSet(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
 
-  /* ---------- easter egg modal ---------- */
-  var modal=$('#easter-egg-modal'), eggBtn=$('#easter-egg-button');
-  eggBtn.addEventListener('click',function(){if(modal.showModal)modal.showModal();else modal.setAttribute('open','')});
-  $$('[data-close-modal]',modal).forEach(function(b){b.addEventListener('click',function(){modal.close?modal.close():modal.removeAttribute('open');eggBtn.textContent='Told you not to. 😏'})});
-  modal.addEventListener('click',function(e){if(e.target===modal)modal.close()});
+  draw = () => {
+    if (this.state.spinning || (this.state.draws || 0) >= 3) return;
+    let ticks = 0; this.setState({ spinning: true });
+    this.spinT = setInterval(() => {
+      ticks++;
+      this.setState({ drawIdx: Math.floor(Math.random() * this.ideas.length) });
+      if (ticks > 16) { clearInterval(this.spinT); this.setState(s => ({ spinning: false, draws: (s.draws || 0) + 1 })); }
+    }, 70 + ticks * 4);
+  };
 
-  /* ---------- final + celebration ---------- */
-  var layer=$('#celebration-layer'), canvas=$('#celebration-canvas'), ctx=canvas.getContext('2d'), parts=[], raf, dpr=Math.min(window.devicePixelRatio||1,2);
-  var BLUE='#7fb1ec', RED='#ec7f86', WHITE='#f6f2ea', GOLD='#e9cf87';
-  function resize(){canvas.width=innerWidth*dpr;canvas.height=innerHeight*dpr;ctx.setTransform(dpr,0,0,dpr,0,0)}
-  function heart(x,y,s){ctx.beginPath();ctx.moveTo(x,y+s*.3);ctx.bezierCurveTo(x,y,x-s*.5,y,x-s*.5,y+s*.3);ctx.bezierCurveTo(x-s*.5,y+s*.6,x,y+s*.8,x,y+s);ctx.bezierCurveTo(x,y+s*.8,x+s*.5,y+s*.6,x+s*.5,y+s*.3);ctx.bezierCurveTo(x+s*.5,y,x,y,x,y+s*.3);ctx.fill()}
-  function burst(x,y){for(var i=0;i<36;i++){var a=Math.PI*2*i/36,v=2+Math.random()*3;parts.push({x:x,y:y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,g:.05,life:70,c:i%2?BLUE:RED,t:'spark',s:2.5})}}
-  function celebrate(){
-    layer.hidden=false;
-    if(reducedMotion()){return}
-    resize();parts=[];
-    var W=innerWidth,H=innerHeight;
-    for(var i=0;i<140;i++)parts.push({x:W/2+(Math.random()-.5)*W*.3,y:H*.55,vx:(Math.random()-.5)*14,vy:-Math.random()*14-6,g:.3,life:160+Math.random()*60,c:[BLUE,RED,WHITE,GOLD][i%4],t:'conf',s:6+Math.random()*6,r:Math.random()*6,vr:(Math.random()-.5)*.3});
-    for(var j=0;j<40;j++)parts.push({x:Math.random()*W,y:H+20+Math.random()*H*.5,vx:(Math.random()-.5)*.6,vy:-1.2-Math.random()*1.6,g:0,life:420,c:j%2?BLUE:RED,t:'heart',s:10+Math.random()*16});
-    [0,600,1200,1800].forEach(function(d,k){setTimeout(function(){burst(W*(.2+.2*k),H*(.2+Math.random()*.15))},d)});
-    var FLOAT=[['🍫','Chicolat'],['⭐','Patrick'],['🐻','Jiso'],['🌙','Ora'],['🐶','Chuckie'],['img','Bubu + Dudu']];
-    FLOAT.forEach(function(f,i){
-      var el=document.createElement('div');el.className='celebration-floater';
-      el.style.left=(8+i*15)+'%';el.style.animationDuration=(6+Math.random()*2)+'s';el.style.animationDelay=(i*.35)+'s';
-      if(f[0]==='img'){var im=new Image();im.src=$('#img_hero_bubu-dudu_01').src;im.alt='';el.appendChild(im)}else el.appendChild(document.createTextNode(f[0]));
-      var s=document.createElement('small');s.textContent=f[1];el.appendChild(s);
-      layer.appendChild(el);setTimeout(function(){el.remove()},10000);
+  claimVals(rv) {
+    const { pick, when, stub } = this.state;
+    const on = 'oklch(0.72 0.12 250)', off = 'oklch(0.4 0.03 265)';
+    return {
+      noneRevealed: rv.length === 0,
+      claimable: [...rv].sort((a, b) => a - b).map(i => ({ label: this.data[i][0], on: pick === i, border: pick === i ? on : off, bg: pick === i ? 'oklch(0.4 0.09 250)' : 'transparent', onPick: () => this.setState({ pick: i }) })),
+      whens: this.whenOpts.map(w => ({ label: w, on: when === w, border: when === w ? on : off, bg: when === w ? 'oklch(0.4 0.09 250)' : 'transparent', onPick: () => this.setState({ when: w }) })),
+      cantPrint: pick == null || !when || !rv.includes(pick) || !!this.state.printing,
+      printLabel: this.state.printing ? 'Printing…' : 'Print claim stub',
+      printerStatus: this.state.printing ? 'Printing' : 'Ready',
+      ledColor: this.state.printing ? 'oklch(0.7 0.18 25)' : 'oklch(0.78 0.16 150)',
+      printOpacity: pick == null || !when ? .5 : 1,
+      printStub: () => { if (pick == null || !when) return; this.setState({ stub: { prize: this.data[pick][0], when, code: 'M22-' + String(pick + 1).padStart(2, '0') + '-' + Math.random().toString(36).slice(2, 6).toUpperCase() } }); },
+      hasStub: !!stub, noStub: !stub, stub: stub || {},
+      stubBg: stub ? 'oklch(0.97 0.012 80)' : 'transparent', stubInk: 'oklch(0.2 0.03 265)'
+    };
+  }
+
+  tickClock() {
+    const now = new Date(); let t = new Date(now.getFullYear(), now.getMonth(), 29);
+    if (t <= now) t = new Date(now.getFullYear(), now.getMonth() + 1, 29);
+    const s = Math.max(0, Math.floor((t - now) / 1000));
+    this.setState({ cd: [Math.floor(s / 86400), Math.floor(s % 86400 / 3600), Math.floor(s % 3600 / 60), s % 60] });
+  }
+
+  renderVals() {
+    const rv = this.state.revealed;
+    const tickets = this.data.map(([prize, fine], i) => {
+      const revealed = rv.includes(i);
+      return {
+        idx: i, no: String(i + 1).padStart(2, '0'), prize, fine, revealed,
+        accent: i % 2 ? 'oklch(0.58 0.17 18)' : 'oklch(0.55 0.13 250)',
+        foilOpacity: revealed ? 0 : 1, foilEvents: revealed ? 'none' : 'auto',
+        status: revealed ? 'Valid until Nov 29, 2026' : 'Scratch to reveal',
+        btnLabel: revealed ? 'Claimed ♥' : 'Reveal', btnOpacity: revealed ? .55 : 1,
+        onReveal: () => this.reveal(i)
+      };
     });
-    cancelAnimationFrame(raf);
-    (function loop(){
-      ctx.clearRect(0,0,W,H);
-      parts=parts.filter(function(p){return p.life>0});
-      parts.forEach(function(p){
-        p.vy+=p.g;p.x+=p.vx;p.y+=p.vy;p.life--;ctx.globalAlpha=Math.min(1,p.life/40);ctx.fillStyle=p.c;
-        if(p.t==='conf'){p.vx*=.99;p.r+=p.vr;ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.r);ctx.fillRect(-p.s/2,-p.s/4,p.s,p.s/2);ctx.restore()}
-        else if(p.t==='heart'){p.x+=Math.sin(p.life/30)*.4;heart(p.x,p.y,p.s)}
-        else {p.vx*=.97;p.vy*=.97;ctx.beginPath();ctx.arc(p.x,p.y,p.s,0,7);ctx.fill()}
-      });
-      ctx.globalAlpha=1;
-      if(parts.length)raf=requestAnimationFrame(loop);else{ctx.clearRect(0,0,W,H)}
-    })();
+    return {
+      rootRef: this.rootRef, tickets,
+      revealedCount: rv.length, progressPct: (rv.length / 6 * 100) + '%',
+      allDone: rv.length >= 6,
+      draw: this.draw,
+      ...this.claimVals(rv),
+      moods: this.moodData.map(([label], i) => { const on = this.state.mood === i; return { label, on, border: on ? 'oklch(0.68 0.16 18)' : 'oklch(0.4 0.03 265)', bg: on ? 'oklch(0.42 0.12 18)' : 'transparent', onPick: () => this.pickMood(i) }; }),
+      moodHead: this.state.mood == null ? 'Waiting for your call' : this.state.typing === 1 ? 'Bubu is typing…' : 'Bubu says',
+      moodMsg: this.state.mood == null ? 'Tap a mood above. Bubu is on the line.' : this.state.typing === 1 ? '• • •' : (this.state.typed || '') + (this.state.typing === 2 ? '▍' : ''),
+      wishDraft: this.state.wishDraft,
+      onWish: e => this.setState({ wishDraft: e.target.value }),
+      cantWish: !this.state.wishDraft.trim(),
+      wishOpacity: this.state.wishDraft.trim() ? 1 : .5,
+      wishes: this.state.wishes.map(t => ({ t })),
+      noWishes: this.state.wishes.length === 0,
+      nextKulit: this.nextKulit,
+      kulit: (([f, cap, say, size, pos]) => ({ src: 'assets/stickers/' + f, cap, say, size, pos }))(this.kulitData[this.state.kIdx || 0]),
+      kulitDots: this.kulitData.map((_, i) => ({ w: i === (this.state.kIdx || 0) ? '24px' : '8px', bg: i === (this.state.kIdx || 0) ? 'oklch(0.68 0.16 18)' : 'oklch(0.4 0.03 265)' })),
+      stickers: this.stickerData.map(([f, cap, w, ar, size, pos, r]) => ({ src: 'assets/stickers/' + f, cap, w, ar, size, pos, r, or: r === '50%' ? '50%' : 'calc(' + r + ' + 9px)' })),
+      dropCoin: () => this.dropCoin(),
+      drawText: this.state.drawIdx == null ? 'Tap the button. Fate is waiting.' : this.ideas[this.state.drawIdx],
+      drawLabel: this.state.spinning ? 'Drawing…' : this.state.drawIdx == null ? 'Ready' : 'This month we\u2019re doing',
+      drawBtn: this.state.spinning ? 'Spinning…' : !this.state.draws ? 'Draw our date' : 'Reroll',
+      drawDisabled: !!this.state.spinning || (this.state.draws || 0) >= 3,
+      drawOpacity: (this.state.draws || 0) >= 3 ? .5 : 1,
+      rerollNote: !this.state.draws ? '1 draw + 2 rerolls' : this.state.draws >= 3 ? 'Final na \u2019yan. No more rerolls.' : (3 - this.state.draws) + ' reroll' + (3 - this.state.draws > 1 ? 's' : '') + ' left',
+      terms: this.terms.map((t, i) => ({ n: i + 1, t })),
+      countdown: (this.state.cd || [0, 0, 0, 0]).map((v, i) => ({ v: String(v).padStart(2, '0'), u: ['Days', 'Hours', 'Mins', 'Secs'][i] })),
+      revealAll: () => { const all = [0,1,2,3,4,5]; all.filter(i => !rv.includes(i)).forEach((i, k) => setTimeout(() => this.popTicket(i), k * 140)); try { localStorage.setItem(this.KEY, JSON.stringify(all)); } catch (e) {} this.setState({ revealed: all }); }
+    };
   }
-  window.addEventListener('resize',function(){if(!layer.hidden)resize()});
-  $$('[data-answer]').forEach(function(b){b.addEventListener('click',function(){
-    var hint=$('#final-hint');
-    if(b.dataset.answer==='yes')hint.textContent='Correct answer. Could have used more attitude, but I\'ll take it.';
-    $('#final-ask').hidden=true;var ans=$('#final-answer');ans.hidden=false;ans.focus({preventScroll:true});
-    if(b.dataset.answer==='yes'){var n=document.createElement('p');n.className='final-question-hint';n.textContent='(Correct answer. Could have said it with more attitude, but I\'ll take it.)';ans.insertBefore(n,$('#final-replay'))}
-    celebrate();
-  })});
-  $('#final-replay').addEventListener('click',celebrate);
-})();
+}
 </script>
 </body>
 </html>
